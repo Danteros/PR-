@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/back_dialog"
+    android:minWidth="295dp"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="15dp"
+    android:paddingTop="25dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Изменить каталог"
+            android:id="@+id/textView5"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Имя Каталога:"
+            android:id="@+id/nameCatal"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/dialogReNameCatal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="25"
+            android:background="@android:color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textCursorDrawable="@drawable/ic_cursor"
+            android:layout_weight="1.27" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="499dp"
+        android:layout_height="2dp"
+        android:background="#67a0c8"
+        android:id="@+id/view"
+        android:layout_below="@+id/nameCatal"
+        android:layout_alignLeft="@+id/nameCatal"
+        android:layout_alignStart="@+id/nameCatal"
+        android:layout_marginLeft="127dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Кол-во:"
+            android:id="@+id/textView6"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/dialogRekolvo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="25"
+            android:background="@android:color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textCursorDrawable="@drawable/ic_cursor"
+            android:layout_weight="1.27" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#67a0c8"
+        android:id="@+id/view1"
+        android:layout_below="@+id/nameCatal"
+        android:layout_alignLeft="@+id/nameCatal"
+        android:layout_alignStart="@+id/nameCatal"
+        android:layout_marginLeft="63dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/view"
+        android:layout_alignRight="@+id/view2"
+        android:layout_alignEnd="@+id/view2"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/dialogEnterNegativeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector"
+            android:minHeight="35dp"
+            android:text="ОТМЕНА"
+            android:textColor="#757575"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/dialogEnterPositiveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:minHeight="35dp"
+            android:text="ОК"
+            android:textColor="#67a0c8"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

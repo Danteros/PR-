@@ -1,0 +1,346 @@
+﻿<html>
+<head>
+<title>Расшифровка степени защиты IP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 1;
+	padding: 2;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Расшифровка степени защиты IP </h3>
+<div align=justify>
+<p>Все электротехнические устройства должны соответствовать определенной степени защиты в соответствии с МЭК 70-1 – IP (International/Ingress Protection). Степень защиты приводится в виде IPXX, где первая цифра обозначает – уровень защиты от попадания твёрдых частиц и степень защиты по электробезопасности и от пыли (от 0 до 6), а вторая – защиту от влаги (от 0 до 8).</p>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>&nbsp;IP<FONT COLOR="#68a5d1">X</font>_&nbsp;</th>
+<th>&nbsp;Вид защиты&nbsp;</th>
+</tr>
+<tr>
+<td>0</td>
+<td>Защиты нет. Допустимо применение в корпусах.</td>
+</tr>
+<tr class='even'>
+<td>1</td>
+<td>Защита от твердых частиц размером от 50 мм. Большие поверхности тела, нет защиты от сознательного контакта. Допустимое применение: в закрытых помещениях (доступ в которые разрешается только уполномоченным и обученным лицам).</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Защита от твердых частиц размером от 12 мм. Пальцы и подобные объекты. Допустимое применение: в обычных помещениях.</td>
+</tr>
+<tr class='even'>
+<td>3</td>
+<td>Защита от частиц размером от 2,5 мм. Инструменты, кабели и т. п.. Допустимое применение: в обычных помещениях.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Защита от частиц размером от 1 мм. Большинство проводов, болты и т. п.. Допустимое применение: в обычных помещениях.</td>
+</tr>
+<tr class='even'>
+<td>5</td>
+<td>Частичная защита от пыли. Некоторое количество пыли может проникать внутрь, однако это не нарушает работу устройства. Полная защита от контакта Допустимое применение: в изредка пыльных помещениях.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Полная защита от пыли. Пыль не может попасть в устройство. Полная защита от контакта. Допустимое применение: в постоянно пыльных помещениях.</td>
+</tr>
+<tr>
+<th>&nbsp;IP_<FONT COLOR="#68a5d1">X</font>&nbsp;</td>
+<th>&nbsp;Вид защиты&nbsp;</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Защиты нет. Допустимое применение: в сухих помещениях.td>
+</tr>
+<tr class='even'>
+<td>1</td>
+<td>От вертикально падающих капель. Вертикально капающая вода не должна нарушать работу устройства. Допустимое применение: во влажных помещениях с устройством в заданном вертикальном положении.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>От капель воды, падающих под углом 15°. Допустимое применение: во влажных помещениях.</td>
+</tr>
+<tr class='even'>
+<td>3</td>
+<td>От наклонно падающих брызг, угол наклона до 60°. Допустимое применение: места, подвергающиеся дождю, но не струям снизу.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>От брызг. Допустимое применение: места, подвергающиеся дождю и струям (например, станция с прохождением транспортных средств).</td>
+</tr>
+<tr class='even'>
+<td>5</td>
+<td>От водяных струй. Защита от водяных струй с любого направления. Допустимое применение: в местах, подвергающихся мойке струями воды средней мощности.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>От мощных водяных струй. Защита от морских волн или сильных водяных струй. Попавшая внутрь корпуса вода не должна нарушать работу устройства. Допустимое применение: в местах, подвергающихся энергичной мойке и штормам (например, на пирсах).</td>
+</tr>
+<tr class='even'>
+<td>7</td>
+<td>От временного погружения в воду. При кратковременном погружении вода не попадает в количествах, нарушающих работу устройства. Постоянная работа в погружённом режиме не предполагается. Допустимое применение: во временно затопляемых или надолго оказывающихся под снегом местах.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>От продолжительного погружения в воду. Испытания по методике, согласованной с заказчиком или конечным потребителем.</td>
+</tr>
+</tbody></table>
+<p>Возможны следующие сочетания степени защиты:</p>
+<table>
+<tr>
+<th>&nbsp;IP&nbsp;</td>
+<th>&nbsp;0x&nbsp;</td>
+<th>&nbsp;1x&nbsp;</td>
+<th>&nbsp;2x&nbsp;</td>
+<th>&nbsp;3x&nbsp;</td>
+<th>&nbsp;4x&nbsp;</td>
+<th>&nbsp;5x&nbsp;</td>
+<th>&nbsp;6x&nbsp;</td>
+</tr>
+<tr>
+<th>&nbsp;x0&nbsp;</td>
+<td>00</td>
+<td>10</td>
+<td>20</td>
+<td>30</td>
+<td>40</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr class='even'>
+<th>&nbsp;x1&nbsp;</td>
+<td></td>
+<td>11</td>
+<td>21</td>
+<td>31</td>
+<td>41</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>&nbsp;x2&nbsp;</td>
+<td></td>
+<td>12</td>
+<td>22</td>
+<td>32</td>
+<td>42</td>
+<td></td>
+<td></td>
+</tr>
+<tr class='even'>
+<th>&nbsp;x3&nbsp;</td>
+<td></td>
+<td></td>
+<td>23</td>
+<td>33</td>
+<td>43</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>&nbsp;x4&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>34</td>
+<td>44</td>
+<td>54</td>
+<td></td>
+</tr>
+<tr class='even'>
+<th>&nbsp;x5&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>55</td>
+<td>65</td>
+</tr>
+<tr>
+<th>&nbsp;x6&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>66</td>
+</tr>
+<tr class='even'>
+<th>&nbsp;x7&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>67</td>
+</tr>
+<tr>
+<th>&nbsp;x8&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>68</td>
+</tr>
+</tbody></table>
+<p>Для обычного помещения достаточно степени защиты IP20. В помещения с повышенной влажностью, например, в ванне, стоит устанавливать устройства со степенью защиты IP44. Для уличного размещения необходима степень защиты IP65 и выше.</p>
+</font>
+</body>
+</html>

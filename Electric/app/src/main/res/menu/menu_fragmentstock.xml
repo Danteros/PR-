@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.FragmentStock">
+    <item
+        android:id="@+id/action_addtitle"
+        android:orderInCategory="100"
+        android:title="@string/action_addtitle"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_entr"
+        android:orderInCategory="100"
+        android:title="@string/action_entr"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_regist"
+        android:orderInCategory="100"
+        android:title="@string/action_regist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_whatisstock"
+        android:orderInCategory="100"
+        android:title="@string/action_whatisstock"
+        app:showAsAction="never"/>
+</menu>

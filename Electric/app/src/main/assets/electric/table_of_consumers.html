@@ -1,0 +1,339 @@
+﻿<html>
+<head>
+<title>Таблица мощности приборов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 1;
+	padding: 2;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Таблица мощности бытовых приборов </h3>
+<div align=justify>
+<p>Проектирование любой электросети нужно начинать с расчета нагрузок. В этой таблице приведены потребительские мощности основных бытовых электроприборов.</p>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>&nbsp;Электроприбор&nbsp;</td>
+<th>&nbsp;Мощность (Вт)&nbsp;</td>
+</tr>
+<tr>
+<th style="color:#5294c3" colspan="2"><div align=center>Бытовые приборы</td>
+</tr>
+<tr>
+<td>Телевизор</td>
+<td>150-350</td>
+</tr>
+<tr class='even'>
+<td>Пылесос</td>
+<td>600-2000</td>
+</tr>
+<tr>
+<td>Электрочайник</td>
+<td>1500</td>
+</tr>
+<tr class='even'>
+<td>Тостер</td>
+<td>600-1500</td>
+</tr>
+<tr>
+<td>Кофеварка</td>
+<td>900-1200</td>
+</tr>
+<tr class='even'>
+<td>СВЧ печь</td>
+<td>2000-2500</td>
+</tr>
+<tr>
+<td>Посудомоечная машина</td>
+<td>2000-2500</td>
+</tr>
+<tr class='even'>
+<td>Холодильник</td>
+<td>200-600</td>
+</tr>
+<tr>
+<td>Духовой шкаф</td>
+<td>1000-2000</td>
+</tr>
+<tr class='even'>
+<td>Домашний кинотеатр</td>
+<td>300-1000</td>
+</tr>
+<tr>
+<td>Компьютер</td>
+<td>350-900</td>
+</tr>
+<tr class='even'>
+<td>Утюг</td>
+<td>600-1800</td>
+</tr>
+<tr>
+<td>Обогреватель</td>
+<td>1200-2400</td>
+</tr>
+<tr class='even'>
+<td>Фен</td>
+<td>600-2000</td>
+</tr>
+<tr>
+<td>Стиральная машина</td>
+<td>1500-3500</td>
+</tr>
+<tr class='even'>
+<td>Кондиционер</td>
+<td>1000-3000</td>
+</tr>
+<tr>
+<td>Электроплита</td>
+<td>1500-5000</td>
+</tr>
+<tr class='even'>
+<td>Блендер</td>
+<td>100-600</td>
+</tr>
+<tr>
+<td>Гриль</td>
+<td>1200-2000</td>
+</tr>
+<tr class='even'>
+<td>Полотенцесушитель</td>
+<td>600-1500</td>
+</tr>
+<tr>
+<th style="color:#5294c3" colspan="2"><div align=center>Электроинструмент</td>
+</tr>
+<tr>
+<td>Дрель</td>
+<td>400-800</td>
+</tr>
+<tr class='even'>
+<td>Перфоратор</td>
+<td>600-1500</td>
+</tr>
+<tr>
+<td>Болгарка</td>
+<td>600-3000</td>
+</tr>
+<tr class='even'>
+<td>Шлифовальная машина</td>
+<td>600-2200</td>
+</tr>
+<tr>
+<td>Электролобзик</td>
+<td>250-700</td>
+</tr>
+<tr class='even'>
+<td>Сварочный аппарат</td>
+<td>1500-3000</td>
+</tr>
+<tr>
+<td>Циркуляционная пила</td>
+<td>800-1600</td>
+</tr>
+<tr class='even'>
+<td>Газонокосилка</td>
+<td>800-2500</td>
+</tr>
+<tr>
+<td>Цепная пила</td>
+<td>1200-2000</td>
+</tr>
+<tr>
+<th style="color:#5294c3" colspan="2"><div align=center>Электроприборы</td>
+</tr>
+<tr>
+<td>Газовый котел</td>
+<td>150-250</td>
+</tr>
+<tr class='even'>
+<td>Циркуляционный насос</td>
+<td>90-500</td>
+</tr>
+<tr>
+<td>Насос септика</td>
+<td>500-1500</td>
+</tr>
+<tr class='even'>
+<td>Компрессор</td>
+<td>1500-2200</td>
+</tr>
+<tr>
+<td>Бойлер</td>
+<td>1200-3000</td>
+</tr>
+</tbody></table>
+</font>
+</body>
+</html>

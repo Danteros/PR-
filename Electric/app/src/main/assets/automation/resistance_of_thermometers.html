@@ -1,0 +1,597 @@
+﻿<html>
+<head>
+<title>Сопротивление термометров</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:10px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:10pt;"> 
+<div align=justify>
+<h3> Таблица сопротивлений некоторых термометров сопротивления</h3>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tbody>
+<tr>
+<th>Т&deg;С</td>
+<th>Pt&shy100</td>
+<th>Pt&shy1000</td>
+<th>PTC</td>
+<th>NTC</td>
+<th>NTC</td>
+<th>NTC</td>
+<th>NTC</td>
+<th>NTC</td>
+</tr>
+<tr>
+<th></td>
+<th>Typ: 404</td>
+<th>Typ: 501</td>
+<th>Typ: 201</td>
+<th>Typ: 101</td>
+<th>Typ: 102</td>
+<th>Typ: 103</td>
+<th>Typ: 104</td>
+<th>Typ: 105</td>
+</tr>
+<tr>
+<td>-50</td>
+<td>80,31</td>
+<td>803,1</td>
+<td>1032</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-45</td>
+<td>82,29</td>
+<td>822,9</td>
+<td>1084</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-40</td>
+<td>84,27</td>
+<td>842,7</td>
+<td>1135</td>
+<td></td>
+<td></td>
+<td>50475</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-35</td>
+<td>86,25</td>
+<td>862,5</td>
+<td>1191</td>
+<td></td>
+<td></td>
+<td>36405</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-30</td>
+<td>88,22</td>
+<td>882,2</td>
+<td>1246</td>
+<td></td>
+<td></td>
+<td>26550</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-25</td>
+<td>90,19</td>
+<td>901,9</td>
+<td>1306</td>
+<td></td>
+<td>26083</td>
+<td>19560</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-20</td>
+<td>92,16</td>
+<td>921,6</td>
+<td>1366</td>
+<td></td>
+<td>19414</td>
+<td>14560</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-15</td>
+<td>94,12</td>
+<td>941,2</td>
+<td>1430</td>
+<td></td>
+<td>14596</td>
+<td>10943</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-10</td>
+<td>96,09</td>
+<td>960,9</td>
+<td>1493</td>
+<td></td>
+<td>11066</td>
+<td>8299</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-5</td>
+<td>98,04</td>
+<td>980,4</td>
+<td>1561</td>
+<td>31389</td>
+<td>8466</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0</td>
+<td>100,00</td>
+<td>1000,0</td>
+<td>1628</td>
+<td>23868</td>
+<td>6536</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>101,95</td>
+<td>1019,5</td>
+<td>1700</td>
+<td>18299</td>
+<td>5078</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>103,90</td>
+<td>1039,0</td>
+<td>1771</td>
+<td>14130</td>
+<td>3986</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>105,85</td>
+<td>1058,5</td>
+<td>1847</td>
+<td>10998</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>107,79</td>
+<td>1077,9</td>
+<td>1922</td>
+<td>8618</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>109,73</td>
+<td>1097,3</td>
+<td>2000</td>
+<td>6800</td>
+<td></td>
+<td></td>
+<td>15000</td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td>111,67</td>
+<td>1116,7</td>
+<td>2080</td>
+<td>5401</td>
+<td></td>
+<td></td>
+<td>11933</td>
+<td></td>
+</tr>
+<tr>
+<td>35</td>
+<td>113,61</td>
+<td>1136,1</td>
+<td>2162</td>
+<td>4317</td>
+<td></td>
+<td></td>
+<td>9522</td>
+<td></td>
+</tr>
+<tr>
+<td>40</td>
+<td>115,54</td>
+<td>1155,4</td>
+<td>2244</td>
+<td>3471</td>
+<td></td>
+<td></td>
+<td>7657</td>
+<td></td>
+</tr>
+<tr>
+<td>45</td>
+<td>117,47</td>
+<td>1174,7</td>
+<td>2330</td>
+<td></td>
+<td></td>
+<td></td>
+<td>6194</td>
+<td></td>
+</tr>
+<tr>
+<td>50</td>
+<td>119,40</td>
+<td>1194,0</td>
+<td>2415</td>
+<td></td>
+<td></td>
+<td></td>
+<td>5039</td>
+<td></td>
+</tr>
+<tr>
+<td>55</td>
+<td>121,32</td>
+<td>1213,2</td>
+<td>2505</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4299</td>
+<td>27475</td>
+</tr>
+<tr>
+<td>60</td>
+<td>123,24</td>
+<td>1232,4</td>
+<td>2595</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3756</td>
+<td>22590</td>
+</tr>
+<tr>
+<td>65</td>
+<td>125,16</td>
+<td>1251,6</td>
+<td>2689</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>18668</td>
+</tr>
+<tr>
+<td>70</td>
+<td>127,07</td>
+<td>1270,7</td>
+<td>2782</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>15052</td>
+</tr>
+<tr>
+<td>75</td>
+<td>128,98</td>
+<td>1289,8</td>
+<td>2880</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12932</td>
+</tr>
+<tr>
+<td>80</td>
+<td>130,89</td>
+<td>1308,9</td>
+<td>2977</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10837</td>
+</tr>
+<tr>
+<td>85</td>
+<td>132,80</td>
+<td>1328,0</td>
+<td>3079</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9121</td>
+</tr>
+<tr>
+<td>90</td>
+<td>134,70</td>
+<td>1347,0</td>
+<td>3180</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7708</td>
+</tr>
+<tr>
+<td>95</td>
+<td>136,60</td>
+<td>1366,0</td>
+<td>3285</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6539</td>
+</tr>
+<tr>
+<td>100</td>
+<td>138,50</td>
+<td>1385,0</td>
+<td>3390</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>105</td>
+<td>140,39</td>
+<td>1403,9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>110</td>
+<td>142,29</td>
+<td>1422,9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>150</td>
+<td>157,31</td>
+<td>1573,1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>200</td>
+<td>175,84</td>
+<td>1758,4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</font>
+</body>
+</html>

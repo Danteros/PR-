@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#67a0c8</color>
+    <color name="color_primary_dark">#517d9c</color>
+    <color name="divider_calc">#c7c7cc</color>
+    <color name="enter_text">#5294c4</color>
+    <color name="bg_text_description">#50999999</color>
+    <color name="bg_edit_description">#50999999</color>
+</resources>

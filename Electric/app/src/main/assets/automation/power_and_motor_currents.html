@@ -1,0 +1,823 @@
+﻿<html>
+<head>
+<title>Таблица соотношения мощности и тока электродвигателей</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:10px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Таблица соотношения мощности и тока электродвигателя </h3>
+<div align=justify>
+<p>Ниже приведены значения токов для стандартных 3-фазных асинхронных двигателей с короткозамкнутым ротором, 1500 об/мин, 50 Гц., 1800 об/мин, 60 Гц.
+Приведенные значения являются примерными и могут изменяться в зависимости от производителя двигателя и количества полюсов.</p>
+<p><i>Номинальные токи двигателя в соответствии с МЭК 60947-4-1, Прил. G </i></p>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>Мош&shyность</th>
+<th colspan="8">Номинальные токи</th>
+</tr>
+<tr>
+<th rowspan="2">кВт</th>
+<th colspan="8">В</th>
+</tr>
+<tr>
+<th>230</th>
+<th>240</th>
+<th>380</th>
+<th>400</th>
+<th>500</th>
+<th>660</th>
+<th>690</th>
+</tr>
+<tr>
+<td>0,06</td>
+<td>0,35</td>
+<td>0,34</td>
+<td>0,21</td>
+<td>0,2</td>
+<td>0,16</td>
+<td>0,13</td>
+<td>0,12</td>
+</tr>
+<tr class='even'>
+<td>0,09</td>
+<td>0,52</td>
+<td>0,5</td>
+<td>0,32</td>
+<td>0,3</td>
+<td>0,24</td>
+<td>0,18</td>
+<td>0,17</td>
+</tr>
+<tr>
+<td>0,12</td>
+<td>0,7</td>
+<td>0,67</td>
+<td>0,46</td>
+<td>0,44</td>
+<td>0,32</td>
+<td>0,24</td>
+<td>0,23</td>
+</tr>
+<tr class='even'>
+<td>0,18</td>
+<td>1</td>
+<td>1</td>
+<td>0,63</td>
+<td>0,6</td>
+<td>0,48</td>
+<td>0,37</td>
+<td>0,35</td>
+</tr>
+<tr>
+<td>0,25</td>
+<td>1,5</td>
+<td>1.4</td>
+<td>0,9</td>
+<td>0,85</td>
+<td>0,68</td>
+<td>0,51</td>
+<td>0,49</td>
+</tr>
+<tr class='even'>
+<td>0,37</td>
+<td>1,9</td>
+<td>1,8</td>
+<td>1,2</td>
+<td>1,1</td>
+<td>0,88</td>
+<td>0,67</td>
+<td>0,64</td>
+</tr>
+<tr>
+<td>0,55</td>
+<td>2,6</td>
+<td>2,6</td>
+<td>1,6</td>
+<td>1,5</td>
+<td>1,2</td>
+<td>0,91</td>
+<td>0,87</td>
+</tr>
+<tr class='even'>
+<td>0,75</td>
+<td>3,3</td>
+<td>3,2</td>
+<td>2</td>
+<td>1,9</td>
+<td>1,5</td>
+<td>1,15</td>
+<td>1,1</td>
+</tr>
+<tr>
+<td>1,1</td>
+<td>4,7</td>
+<td>4,5</td>
+<td>2,8</td>
+<td>2,7</td>
+<td>2,2</td>
+<td>1,7</td>
+<td>1,6</td>
+</tr>
+<tr class='even'>
+<td>1,5</td>
+<td>6,3</td>
+<td>6</td>
+<td>3,8</td>
+<td>3,6</td>
+<td>2,9</td>
+<td>2,2</td>
+<td>2,1</td>
+</tr>
+<tr>
+<td>2,2</td>
+<td>8,5</td>
+<td>8,1</td>
+<td>5,2</td>
+<td>4,9</td>
+<td>3,9</td>
+<td>2,9</td>
+<td>2,8</td>
+</tr>
+<tr class='even'>
+<td>3</td>
+<td>11,3</td>
+<td>10,8</td>
+<td>6,8</td>
+<td>6,5</td>
+<td>5,2</td>
+<td>4</td>
+<td>3,8</td>
+</tr>
+<tr>
+<td>4</td>
+<td>15</td>
+<td>14,4</td>
+<td>8,9</td>
+<td>8,5</td>
+<td>6,8</td>
+<td>5,1</td>
+<td>4,9</td>
+</tr>
+<tr class='even'>
+<td>5,5</td>
+<td>20</td>
+<td>19,2</td>
+<td>12,1</td>
+<td>11,5</td>
+<td>9,2</td>
+<td>7</td>
+<td>6,7</td>
+</tr>
+<tr>
+<td>7,5</td>
+<td>27</td>
+<td>25,9</td>
+<td>16,3</td>
+<td>15,5</td>
+<td>12,4</td>
+<td>9,3</td>
+<td>8,9</td>
+</tr>
+<tr class='even'>
+<td>11</td>
+<td>38</td>
+<td>36,4</td>
+<td>23,2</td>
+<td>22</td>
+<td>17,6</td>
+<td>13,4</td>
+<td>12,8</td>
+</tr>
+<tr>
+<td>15</td>
+<td>51</td>
+<td>48,9</td>
+<td>30,5</td>
+<td>29</td>
+<td>23</td>
+<td>17,8</td>
+<td>17</td>
+</tr>
+<tr class='even'>
+<td>18,5</td>
+<td>61</td>
+<td>58,5</td>
+<td>36,8</td>
+<td>35</td>
+<td>28</td>
+<td>22</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>72</td>
+<td>69</td>
+<td>43,2</td>
+<td>41</td>
+<td>33</td>
+<td>25,1</td>
+<td>24</td>
+</tr>
+<tr class='even'>
+<td>30</td>
+<td>96</td>
+<td>92</td>
+<td>57,9</td>
+<td>55</td>
+<td>44</td>
+<td>33,5</td>
+<td>32</td>
+</tr>
+<tr>
+<td>37</td>
+<td>115</td>
+<td>110</td>
+<td>69</td>
+<td>66</td>
+<td>53</td>
+<td>40,8</td>
+<td>39</td>
+</tr>
+<tr class='even'>
+<td>45</td>
+<td>140</td>
+<td>134</td>
+<td>84</td>
+<td>80</td>
+<td>64</td>
+<td>49,1</td>
+<td>47</td>
+</tr>
+<tr>
+<td>55</td>
+<td>169</td>
+<td>162</td>
+<td>102</td>
+<td>97</td>
+<td>78</td>
+<td>59,6</td>
+<td>57</td>
+</tr>
+<tr class='even'>
+<td>75</td>
+<td>230</td>
+<td>220</td>
+<td>139</td>
+<td>132</td>
+<td>106</td>
+<td>81</td>
+<td>77</td>
+</tr>
+<tr>
+<td>90</td>
+<td>278</td>
+<td>266</td>
+<td>168</td>
+<td>160</td>
+<td>128</td>
+<td>97</td>
+<td>93</td>
+</tr>
+<tr class='even'>
+<td>110</td>
+<td>340</td>
+<td>326</td>
+<td>205</td>
+<td>195</td>
+<td>156</td>
+<td>118</td>
+<td>113</td>
+</tr>
+<tr>
+<td>132</td>
+<td>400</td>
+<td>383</td>
+<td>242</td>
+<td>230</td>
+<td>184</td>
+<td>140</td>
+<td>134</td>
+</tr>
+<tr class='even'>
+<td>160</td>
+<td>487</td>
+<td>467</td>
+<td>295</td>
+<td>280</td>
+<td>224</td>
+<td>169</td>
+<td>162</td>
+</tr>
+<tr>
+<td>200</td>
+<td>609</td>
+<td>584</td>
+<td>368</td>
+<td>350</td>
+<td>280</td>
+<td>212</td>
+<td>203</td>
+</tr>
+<tr class='even'>
+<td>250</td>
+<td>748</td>
+<td>717</td>
+<td>453</td>
+<td>430</td>
+<td>344</td>
+<td>261</td>
+<td>250</td>
+</tr>
+<tr>
+<td>315</td>
+<td>940</td>
+<td>901</td>
+<td>568</td>
+<td>540</td>
+<td>432</td>
+<td>327</td>
+<td>313</td>
+</tr>
+<tr class='even'>
+<td>355</td>
+<td>1061</td>
+<td>1017</td>
+<td>642</td>
+<td>610</td>
+<td>488</td>
+<td>370</td>
+<td>354</td>
+</tr>
+<tr>
+<td>400</td>
+<td>1200</td>
+<td>1150</td>
+<td>726</td>
+<td>690</td>
+<td>552</td>
+<td>418</td>
+<td>400</td>
+</tr>
+<tr class='even'>
+<td>500</td>
+<td>1478</td>
+<td>1416</td>
+<td>895</td>
+<td>850</td>
+<td>680</td>
+<td>515</td>
+<td>493</td>
+</tr>
+<tr>
+<td>560</td>
+<td>1652</td>
+<td>1583</td>
+<td>1000</td>
+<td>950</td>
+<td>760</td>
+<td>576</td>
+<td>551</td>
+</tr>
+<tr class='even'>
+<td>630</td>
+<td>1844</td>
+<td>1767</td>
+<td>1116</td>
+<td>1060</td>
+<td>848</td>
+<td>643</td>
+<td>615</td>
+</tr>
+<tr>
+<td>710</td>
+<td>2070</td>
+<td>1984</td>
+<td>1253</td>
+<td>1190</td>
+<td>952</td>
+<td>721</td>
+<td>690</td>
+</tr>
+<tr class='even'>
+<td>800</td>
+<td>2340</td>
+<td>2243</td>
+<td>1417</td>
+<td>1346</td>
+<td>1076</td>
+<td>815</td>
+<td>780</td>
+</tr>
+<tr>
+<td>900</td>
+<td>2640</td>
+<td>2530</td>
+<td>1598</td>
+<td>1518</td>
+<td>1214</td>
+<td>920</td>
+<td>880</td>
+</tr>
+<tr class='even'>
+<td>1000</td>
+<td>2910</td>
+<td>2789</td>
+<td>1761</td>
+<td>1673</td>
+<td>1339</td>
+<td>1014</td>
+<td>970</td>
+</tr>
+</tbody></table>
+<p><i>Номинальные токи двигателя в соответствии с МЭК 60947-4-1, Прил. G и UL 508 </i></p>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>UL/CSA Мош&shyность</th>
+<th colspan="5">Номинальные токи</th>
+</tr>
+<tr>
+<th rowspan="2">л/с</th>
+<th colspan="5">В</th>
+</tr>
+<tr>
+<th>208</th>
+<th>220- 240</th>
+<th>380- 415</th>
+<th>440- 480</th>
+<th>550- 600</th>
+</tr>
+<tr>
+<td>1/2</td>
+<td>2,4</td>
+<td>2,2</td>
+<td>1,3</td>
+<td>1,1</td>
+<td>0,9</td>
+</tr>
+<tr class='even'>
+<td>3/4</td>
+<td>3,5</td>
+<td>3,2</td>
+<td>1,8</td>
+<td>1,6</td>
+<td>1,3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>4,6</td>
+<td>4,2</td>
+<td>2,3</td>
+<td>2,1</td>
+<td>1,7</td>
+</tr>
+<tr class='even'>
+<td>1-1/2</td>
+<td>6,6</td>
+<td>6</td>
+<td>3,3</td>
+<td>3</td>
+<td>2,4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7,5</td>
+<td>6,8</td>
+<td>4,3</td>
+<td>3,4</td>
+<td>2,7</td>
+</tr>
+<tr class='even'>
+<td>3</td>
+<td>10,6</td>
+<td>9,6</td>
+<td>6,1</td>
+<td>4,8</td>
+<td>3,9</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16,7</td>
+<td>15,2</td>
+<td>9,7</td>
+<td>7,6</td>
+<td>6,1</td>
+</tr>
+<tr class='even'>
+<td>7-1/2</td>
+<td>24,2</td>
+<td>22</td>
+<td>14</td>
+<td>11</td>
+<td>9</td>
+</tr>
+<tr>
+<td>10</td>
+<td>30,8</td>
+<td>28</td>
+<td>18</td>
+<td>14</td>
+<td>11</td>
+</tr>
+<tr class='even'>
+<td>15</td>
+<td>46,2</td>
+<td>42</td>
+<td>27</td>
+<td>21</td>
+<td>17</td>
+</tr>
+<tr>
+<td>20</td>
+<td>59,4</td>
+<td>54</td>
+<td>34</td>
+<td>27</td>
+<td>22</td>
+</tr>
+<tr class='even'>
+<td>25</td>
+<td>74,8</td>
+<td>68</td>
+<td>44</td>
+<td>34</td>
+<td>27</td>
+</tr>
+<tr>
+<td>30</td>
+<td>88</td>
+<td>80</td>
+<td>51</td>
+<td>40</td>
+<td>32</td>
+</tr>
+<tr class='even'>
+<td>40</td>
+<td>114</td>
+<td>104</td>
+<td>66</td>
+<td>52</td>
+<td>41</td>
+</tr>
+<tr>
+<td>50</td>
+<td>143</td>
+<td>130</td>
+<td>83</td>
+<td>65</td>
+<td>52</td>
+</tr>
+<tr class='even'>
+<td>60</td>
+<td>169</td>
+<td>154</td>
+<td>103</td>
+<td>77</td>
+<td>62</td>
+</tr>
+<tr>
+<td>75</td>
+<td>211</td>
+<td>192</td>
+<td>128</td>
+<td>96</td>
+<td>77</td>
+</tr>
+<tr class='even'>
+<td>100</td>
+<td>273</td>
+<td>248</td>
+<td>165</td>
+<td>124</td>
+<td>99</td>
+</tr>
+<tr>
+<td>125</td>
+<td>343</td>
+<td>312</td>
+<td>208</td>
+<td>156</td>
+<td>125</td>
+</tr>
+<tr class='even'>
+<td>150</td>
+<td>396</td>
+<td>360</td>
+<td>240</td>
+<td>180</td>
+<td>144</td>
+</tr>
+<tr>
+<td>200</td>
+<td>528</td>
+<td>480</td>
+<td>320</td>
+<td>240</td>
+<td>192</td>
+</tr>
+<tr class='even'>
+<td>250</td>
+<td>-</td>
+<td>604</td>
+<td>403</td>
+<td>302</td>
+<td>242</td>
+</tr>
+<tr>
+<td>300</td>
+<td>-</td>
+<td>722</td>
+<td>482</td>
+<td>361</td>
+<td>289</td>
+</tr>
+<tr class='even'>
+<td>350</td>
+<td>-</td>
+<td>828</td>
+<td>560</td>
+<td>414</td>
+<td>336</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-</td>
+<td>954</td>
+<td>636</td>
+<td>477</td>
+<td>382</td>
+</tr>
+<tr class='even'>
+<td>450</td>
+<td>-</td>
+<td>1030</td>
+<td>-</td>
+<td>515</td>
+<td>412</td>
+</tr>
+<tr>
+<td>500</td>
+<td>-</td>
+<td>1180</td>
+<td>786</td>
+<td>590</td>
+<td>472</td>
+</tr>
+</tbody></table>
+</font>
+</body>
+</html>

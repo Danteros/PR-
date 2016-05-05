@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="page_names">
+        <item>Новости</item>
+        <item>КИПиА</item>
+        <item>Электрика</item>
+        <item>Помощник</item>
+        <item>Мой Склад</item>
+        <item>О проекте</item>
+
+    </string-array>
+    <string-array name="cities">
+    <item>Кабель</item>
+    <item>Moscow</item>
+    <item>Volgograd</item>
+    <item>Saratov</item>
+    <item>Voronezh</item>
+    <item>Samara</item>
+    <item>Tambov</item>
+    </string-array>
+    <string-array name="kosmos">
+        <item>Рассходники</item>
+        <item>Moscow</item>
+        <item>Volgograd</item>
+        <item>Saratov</item>
+        <item>Voronezh</item>
+        <item>Samara</item>
+        <item>Tambov</item>
+    </string-array>
+    <string-array name="luna">
+        <item>Инструменты</item>
+        <item>Moscow</item>
+        <item>Volgograd</item>
+        <item>Saratov</item>
+        <item>Voronezh</item>
+        <item>Samara</item>
+        <item>Tambov</item>
+    </string-array>
+    <string-array name="erth">
+        <item>Прочее</item>
+        <item>Moscow</item>
+        <item>Volgograd</item>
+        <item>Saratov</item>
+        <item>Voronezh</item>
+        <item>Samara</item>
+        <item>Tambov</item>
+    </string-array>
+    <string-array name="calc_items">
+        <item>Калькулятор подбора сечения</item>
+        <item>Расчет освещенности помещения</item>
+        <item>Расчет скорости асинхронного двигателя</item>
+        <item>Калькулятор выбора УЗО</item>
+        <item>Диаметр-сечение</item>
+        <item>Online инженер</item>
+        <item>Документы</item>
+    </string-array>
+    <string-array name="auto_items">
+        <item>Слаботочный кабель</item>
+        <item>Обозначение на схеме</item>
+        <item>Температурные датчики</item>
+        <item>Автоматизируем ИТП</item>
+        <item>Выдержки из СНиП</item>
+        <item>Мощность и токи двигателя</item>
+        <item>Обозн. коммут. аппаратов</item>
+        <item>Сопротивление термометров</item>
+        <item>Таблица плавких вставок</item>
+    </string-array>
+    <string-array name="electric_items">
+        <item>Силовой кабель</item>
+        <item>Обозначения на схеме</item>
+        <item>Выдержки из СНиП Электротехнические установки</item>
+        <item>Заземление</item>
+        <item>Основы безопасности</item>
+        <item>Таблица потребителей</item>
+        <item>Соединение проводов</item>
+        <item>Собираем шкаф</item>
+        <item>Автоматические выключатели</item>
+        <item>Таблица сечений кабеля</item>
+        <item>Защита IP</item>
+        <item>Кабель для судостроителей</item>
+        <item>Электромонтаж у себя дома</item>
+    </string-array>
+    <item name="bxes" type="id" />
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_up"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/news_padding"
+        android:paddingLeft="@dimen/news_padding"
+        android:paddingRight="@dimen/news_padding"
+        android:paddingStart="@dimen/news_padding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_down"
+        android:drawableLeft="@drawable/ic_clock"
+        android:drawableStart="@drawable/ic_clock"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/news_padding"
+        android:paddingLeft="@dimen/news_padding"
+        android:paddingRight="@dimen/news_padding"
+        android:paddingStart="@dimen/news_padding"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+
+</LinearLayout>

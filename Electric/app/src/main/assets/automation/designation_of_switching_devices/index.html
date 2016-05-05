@@ -1,0 +1,431 @@
+﻿<head>
+<title>Условные обозначения. Коммутационные устройства и контактные соединения (ГОСТ 2.755-87)</title>
+<link rel="stylesheet" type="text/css" media="all" href="./designation_of_switching_devices/a-style.css" >
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 1;
+	padding: 2;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+  <div id="text">
+   <div id="wikitext">
+<h3><div align=center> Условные обозначения. Коммутационные устройства и контактные соединения (ГОСТ 2.755-87)</h3>
+    <p>Настоящий стандарт распространяется на схемы, выполняемые вручную или автоматизированным способом, изделий всех отраслей промышленности и строительства, и устанавливает условные графические обозначения коммутационных устройств и их элементов.</p>
+<p>Настоящий стандарт не устанавливает условные графические обозначения на схемах железнодорожной сигнализации, централизации и блокировки. Условные графические обозначения механических связей, приводов и приспособлений - по ГОСТ 2.721-74. Условные графические обозначения воспринимающих частей электромеханических устройств - по ГОСТ 2.756-76. Размеры отдельных условных графических обозначений и соотношение их элементов приведены в приложении.</p>
+<p>1. Общие правила построения обозначений контактов</p>
+  <ul>
+  <li>1.1 &nbsp; Коммутационные устройства на схемах должны быть изображены в положении, принятом за начальное, при котором пусковая система контактов обесточена.</li>
+  <li>1.2 &nbsp; Контакты коммутационных устройств состоят из подвижных и неподвижных контакт-деталей.</li>
+  <li>1.3 &nbsp; Для изображения основных (базовых) функциональных признаков коммутационных устройств применяют условные графические обозначения контактов, которые допускается выполнять в зеркальном отображении:</li>
+  </ul>
+    <table width="100%" cellspacing="1" cellpadding="1" class="center">
+      <tbody>
+<tr>
+<th>Наименование</th>
+<th>Обозначение</th>
+</tr>
+<tr>
+<td style="text-align:left;">1) замыкающих</td><td width="64"><img src="./designation_of_switching_devices/2755_87_0_1.png" alt=""></td>
+    </tr>
+      <tr class='even'><td style="text-align:left;">2) размыкающих</td><td><img src="./designation_of_switching_devices/2755_87_0_2.png" alt=""></td>
+    </tr><tr><td style="text-align:left;">3) переключающих</td><td><img src="./designation_of_switching_devices/2755_87_0_3.png" alt=""></td>
+    </tr><tr class='even'><td style="text-align:left;">4) переключающих с нейтральным<br>центральным положением</td>
+	    <td><img src="./designation_of_switching_devices/2755_87_0_4.png" width="64" height="64" alt=""></td>
+    </tr></tbody></table>
+	<p>1.4 Для пояснения принципа работы коммутационных устройств при необходимости на их контакт-деталях изображают квалифицирующие символы, приведенные в табл. 1.</p>
+  <table width="100%" cellspacing="1" cellpadding="1" class="left">
+    <caption>Таблица 1</caption>
+    <tbody><tr><th>Наименование функции</th><th width="90">Обозначение</th></tr>
+    <tr><td>1. Функция контактора</td><td><img src="./designation_of_switching_devices/2755_87_1_1.png" width="90" alt=""></td>
+    </tr><tr class='even'><td>2. Функция выключателя</td><td><img src="./designation_of_switching_devices/2755_87_1_2.png" alt=""></td>
+    </tr><tr><td>3. Функция разъединителя</td><td><img src="./designation_of_switching_devices/2755_87_1_3.png" alt=""></td>
+    </tr><tr class='even'><td>4. Функция выключателя-разъединителя</td><td><img src="./designation_of_switching_devices/2755_87_1_4.png" alt=""></td>
+    </tr><tr><td>5. Автоматическое срабатывание</td><td><img src="./designation_of_switching_devices/2755_87_1_5.png" alt=""></td></tr><tr class='even'><td>6. Функция путевого или концевого выключателя</td><td><img src="./designation_of_switching_devices/2755_87_1_6.png" alt=""></td>
+    </tr><tr><td>7. Самовозврат</td><td><img src="./designation_of_switching_devices/2755_87_1_7.png" alt=""></td>
+    </tr><tr class='even'><td>8. Отсутствие самовозврата</td><td><img src="./designation_of_switching_devices/2755_87_1_8.png" alt=""></td></tr><tr><td>9. Дугогашение</td><td><img src="./designation_of_switching_devices/2755_87_1_9.png" alt=""></td></tr></tbody></table>
+    <p>Примечание. Обозначения, приведенные в пп. 1-4, 7-9 настоящей таблицы, помещают на неподвижных контакт-деталях, а обозначения в пп. 5 и 6 - на подвижных контакт-деталях.</p>
+    <p>2. Примеры построения обозначений контактов коммутационных устройств приведены в табл. 2.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+    <caption>Таблица 2</caption>
+    <tbody><tr><th>Наименование</th><th width="90">Обозначение</th></tr>
+    <tr><td valign="top">1. Контакт коммутационного устройства:<br><br>1) переключающий без размыкания цепи (мостовой)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2011.png" alt=""></td>
+    </tr><tr class='even'><td>2) с двойным замыканием</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2012.png" alt=""></td>
+    </tr><tr><td>3) с двойным размыканием</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2013.png" alt=""></td>
+    </tr>
+  <tr class='even'><td valign="top">2. Контакт импульсный замыкающий:<br><br>1) при срабатывании</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2021.png" alt=""></td>
+    </tr><tr><td>2) при возврате</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2022.png" alt=""></td>
+    </tr><tr class='even'><td>3) при срабатывании и возврате</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2023.png" alt=""></td>
+    </tr><tr><td valign="top">3. Контакт импульсный размыкающий:<br><br>1) при срабатывании</td><td align="center"><img src="./designation_of_switching_devices/755_2031.png" alt=""></td>
+    </tr><tr class='even'><td>2) при возврате</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2032.png" alt=""></td>
+    </tr><tr><td>3) при срабатывании и возврате</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2033.png" alt=""></td>
+    </tr><tr class='even'><td valign="top">4. Контакт в контактной группе, срабатывающий раньше по отношению к другим контактам группы:<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2041.png" alt=""></td>
+    </tr><tr><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2042.png" alt=""></td>
+    </tr><tr class='even'><td valign="top">5. Контакт в контактной группе, срабатывающий позже по отношению к другим контактам группы:<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2051.png" alt=""></td>
+    </tr><tr><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2052.png" alt=""></td>
+    </tr><tr class='even'><td valign="top">6. Контакт без самовозврата:<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2061.png" alt=""></td>
+    </tr><tr><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2062.png" alt=""></td>
+    </tr><tr class='even'><td valign="top">7. Контакт с самовозвратом:<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2071.png" alt=""></td>
+    </tr><tr><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2072.png" alt=""></td>
+    </tr><tr class='even'><td>8. Контакт переключающий с нейтральным центральным положением с самовозвратом из левого положения и без возврата из правого положения</td><td align="center"><img src="./designation_of_switching_devices/755_2080.png" width="80" height="60" alt=""></td>
+    </tr><tr><td valign="top">9. Контакт контактора:<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2091.png" alt="условное обозначение контакта контактора"></td>
+    </tr><tr class='even'><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2092.png" alt=""></td>
+    </tr><tr><td>3) замыкающий дугогасительный</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2093.png" alt=""></td>
+    </tr><tr class='even'><td>4) размыкающий дугогасительный</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2094.png" alt=""></td>
+    </tr><tr><td>5) замыкающий с автоматическим срабатыванием</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2095.png" alt=""></td>
+    </tr><tr class='even'><td>10. Контакт выключателя</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2100.png" alt=""></td>
+    </tr><tr><td>11. Контакт разъединителя</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2110.png" alt=""></td>
+    </tr><tr class='even'><td>12. Контакт выключателя-разъединителя</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2120.png" alt=""></td>
+    </tr><tr><td valign="top">13. Контакт концевого выключателя:<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2131.png" alt="условное обозначение концевого выключателя"></td>
+    </tr><tr class='even'><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2132.png" alt=""></td>
+    </tr><tr><td valign="top">14. Контакт, чувствительный к температуре (термоконтакт):<br><br>1) замыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2141.png" alt=""></td>
+    </tr><tr class='even'><td>2) размыкающий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2142.png" alt=""></td>
+    </tr>
+  <tr><td valign="top">15. Контакт замыкающий с замедлением, действующим:<br><br>1) при срабатывании</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2151.png" alt=""></td>
+    </tr><tr class='even'><td>2) при возврате</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2152.png" alt=""></td>
+    </tr><tr><td>3) при срабатывании и возврате</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2153.png" alt=""></td>
+    </tr>
+  <tr class='even'><td valign="top">16. Контакт размыкающий с замедлением, действующим:<br><br>1) при срабатывании</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_2161.png" alt=""></td>
+    </tr><tr><td>2) при возврате</td><td align="center"><img src="./designation_of_switching_devices/755_2162.png" alt=""></td></tr><tr class='even'><td>3) при срабатывании и возврате</td><td align="center"><img src="./designation_of_switching_devices/755_2163.png" alt=""></td></tr>
+  <tr><td colspan="2"><em>Примечание к пп. 15 и 16</em>. Замедление происходит при движении в направлении от дуги к ее центру</td></tr>  
+    </tbody></table> 
+  <p>3. Примеры построения обозначений контактов двухпозиционных коммутационных устройств приведены в табл. 3.  </p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+    <caption>Таблица 3</caption>
+    <tbody><tr><th>Наименование</th><th width="100">Обозначение</th></tr><tr><td valign="top">1. Контакт замыкающий выключателя:<br><br>
+      1) однополюсный</td><td align="center"><img src="./designation_of_switching_devices/755_3011.png" width="50%" alt="условное обозначение выключателя"></td>
+    </tr><tr class='even'><td>2) трехполюсный</td><td align="center"><img src="./designation_of_switching_devices/755_3012.png" width="100%"  alt=""></td></tr><tr><td>2. Контакт замыкающий выключателя трехполюсного с автоматическим срабатыванием максимального тока</td><td align="center"><img src="./designation_of_switching_devices/755_3020.png" alt=""></td></tr><tr class='even'><td valign="top">3. Контакт замыкающий нажимного кнопочного выключателя без самовозврата с размыканием и возвратом элемента управления:<br><br>1) автоматически</td><td align="center"><img src="./designation_of_switching_devices/755_3031.png" alt=""></td>
+    </tr><tr><td>2) посредством вторичного нажатия кнопки</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3032.png" alt=""></td>
+    </tr><tr class='even'><td>3) посредством вытягивания кнопки</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3033.png" alt=""></td>
+    </tr><tr><td>4) посредством отдельного привода (например нажатия кнопки-сброс)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3034.png" alt=""></td>
+    </tr><tr class='even'><td>4. Разъединитель трехполюсный</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3040.png" alt=""></td>
+    </tr><tr><td>5. Выключатель-разъединитель трехполюсный</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3050.png" alt=""></td>
+    </tr><tr class='even'><td>6. Выключатель ручной</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3060.png" alt=""></td>
+    </tr><tr><td>7. Выключатель электромагнитный (реле)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3070.png" alt="условное обозначение реле"></td>
+    </tr><tr class='even'><td>8. Выключатель концевой с двумя отдельными цепями</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3080.png" alt=""></td>
+    </tr><tr><td>9. Выключатель термический саморегулирующий</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_3090.png" alt=""></td></tr><tr class='even'><td><i>Примечание</i>. Следует делать различие в изображении контакта и контакта термореле, изображаемого следующим образом</td><td align="center"><img src="./designation_of_switching_devices/755_3091.png" alt=""></td></tr><tr><td>10. Выключатель инерционный</td><td align="center"><img src="./designation_of_switching_devices/755_3100.png" alt=""></td></tr><tr class='even'><td>11. Переключатель ртутный трехконечный</td><td align="center"><img src="./designation_of_switching_devices/755_3050.png" alt=""></td></tr></tbody></table>
+  <p>4. Примеры построения обозначений многопозиционных коммутационных устройств приведены в табл. 4.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 4</caption>
+    <tbody><tr><th>Наименование</th><th width="200">Обозначение</th></tr><tr><td>1. Переключатель однополюсный многопозицион&shyный (пример шести&shyпозицион&shyного)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_4010.png" width="100%" height="80" alt=""></td>
+    </tr><tr class='even'><td><i>Примечание</i>. Позиции переключателя, в которых отсутствуют коммутируемые цепи, или позиции, соединенные между собой, обозначают короткими штрихами (пример шести&shyпозицион&shyного переключателя не коммутирующего электрическую цепь в первой позиции и коммути&shyрующего одну и ту же цепь в четвертой и шестой позиции)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_4011.png" width="100%" alt=""></td></tr><tr><td valign="top">2. Переключатель однополюсный шести&shyпозицион&shyный с безобрывным переключателем</td><td align="center"><img src="./designation_of_switching_devices/755_4020.png" width="100%" alt=""></td>
+    </tr><tr class='even'><td>3. Переключатель однополюсный многопозицион&shyный с подвижным контактом, замыкающим три соседние цепи в каждой позиции</td><td align="center"><img src="./designation_of_switching_devices/755_4030.png" width="100%"  alt=""></td>
+    </tr><tr><td>4. Переключатель однополюсный много&shyпозицион&shyный с подвижным контактом, замыкающим три цепи, исключая одну промежуточную</td><td align="center"><img src="./designation_of_switching_devices/755_4040.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>5. Переключатель однополюсный много&shyпозицион&shyный с подвижным контактом, который в каждой последующей позиции подключает параллельную цепь к цепям, замкнутым в предыдущей позиции</td><td align="center"><img src="./designation_of_switching_devices/755_4050.png" width="100%" alt=""></td></tr><tr><td>6. Переключатель однополюсный шести&shyпозицион&shyный с подвижным контактом, не размыкающим цепь при переходе его из третьей в четвертую позицию</td><td align="center"><img src="./designation_of_switching_devices/755_4060.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td valign="top">7. Переключатель двухполюсный четырех&shyпозицион&shyный</td><td align="center"><img src="./designation_of_switching_devices/755_4070.png" width="100%"  width="120" height="150" alt=""></td></tr><tr><td valign="top">8. Переключатель двухполюсный шести&shyпозицион&shyный, в котором третий контакт верхнего полюса срабатывает раньше, а пятый контакт- позже, чем соответству&shyющие контакты нижнего полюса</td><td align="center"><img src="./designation_of_switching_devices/755_4080.png" width="100%" alt=""></td></tr><tr class='even'><td>9. Переключатель много&shyпозицион&shyный независимых цепей (пример шести цепей)</td><td align="center"><img src="./designation_of_switching_devices/755_4090.png" width="100%" alt=""></td></tr><tr><td><i>Примечания к пп. 1-9</i><br>1. При необходимости указания ограничения движения привода переключателя применяют диаграмму положения, например<br><br>1) привод обеспечивает переход от позиции 1 к позиции 4 и обратно</td><td align="center"><img src="./designation_of_switching_devices/755_4091.png" width="100%"  alt=""></td></tr><tr class='even'><td>2) привод обеспечивает переход от позиции 1 к позиции 4 и далее в позицию 1; обратное движение возможно только от позиции 3 к позиции 1</td><td align="center"><img src="./designation_of_switching_devices/755_4092.png" width="100%"  alt=""></td>
+    </tr><tr><td>2. Диаграмму положения связывают с подвижным контактом переключателя линией механической связи</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_4093.png" width="100%"  alt=""></td></tr><tr class='even'><td valign="top">10. Переключатель со сложной коммутацией изображают на схеме одним из следующих способов:<br><br>1) общее обозначение (например обозначение восемнадцати позиционного роторного переключателя с шестью зажимами, обозначенными от A до F)</td><td align="center"><img src="./designation_of_switching_devices/755_4101.png" width="100%"  alt=""></td></tr><tr><td valign="top">2) обозначение, составленное согласно конструкции</td><td align="center"><img src="./designation_of_switching_devices/755_4102.png" width="100%" alt=""></td></tr><tr class='even'><td>11. Переключатель двухполюсный трех&shyпозицион&shyный с нейтральным положением</td><td align="center"><img src="./designation_of_switching_devices/755_4110.png" width="100%"  alt=""></td></tr><tr><td>12. Переключатель двухполюсный трех&shyпозицион&shyный с самовозвратом в нейтральной положение</td><td align="center"><img src="./designation_of_switching_devices/755_4120.png" width="100%"  alt=""></td></tr>
+    </tbody></table>
+   <p>5. Обозначения контактов контактных соединений приведены в табл. 5.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 5</caption>
+    <tbody><tr><th>Наименование</th><th width="160">Обозначение</th>
+    </tr><tr><td valign="top"><div>1. Контакт контактного соединения:</div><br><br><div>1) разъемного соединения</div><div style="text-align:center">- штырь</div><div style="text-align:center">- гнездо</div></td>
+	    <td align="center" valign="top"><img src="./designation_of_switching_devices/755_5011.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>2) разборного соединения </td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_5012.png" width="100%" alt=""></td>
+    </tr><tr><td>3) неразборного соединения </td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_5013.png" alt=""></td>
+    </tr><tr class='even'>	<td valign="top">2. Контакт скользящий:<br><br>1) по линейной токопроводящей поверхности</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_5021.png" alt=""></td>
+    </tr><tr><td>2) по нескольким линейным токопроводящим поверхностям</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_5022.png" alt=""></td>
+    </tr><tr class='even'><td>3) по кольцевой токопроводящей поверхности</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_5023.png" alt=""></td></tr><tr><td>4) по нескольким линейным кольцевым проводящим поверхностям</td><td align="center"><img src="./designation_of_switching_devices/755_5024.png" width="80" height="60" alt=""></td></tr><tr class='even'><td colspan="2"><em>Примечание.</em> При выполнении схем с помощью ЭВМ допускается применять штриховку вместо зачернения</td></tr></tbody></table>
+  <p>6. Примеры построения обозначений контактных соединений приведены в табл. 6.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 6</caption>
+    <tbody><tr><th>Наименование</th><th width="240">Обозначение</th></tr>
+    <tr><td>1. Соединение контактное разъемное</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_6010.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td valign="top">2. Соединение контактное разъемное четырехпроводное</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_6020.png" width="100%"  alt=""></td>
+    </tr><tr><td valign="top">3. Штырь четырехпроводного контактного разъемного соединения</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_6030.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td valign="top">4. Гнездо четырехпроводного контактного разъемного соединения<br><i>Примечание.</i> В пп. 2-4 цифры внутри прямоугольников обозначают номера контактов</td>	<td align="center"><img src="./designation_of_switching_devices/755_6040.png" width="100%"  alt=""></td></tr><tr><td>5. Соединение контактное разъемное коаксиальное</td><td align="center"><img src="./designation_of_switching_devices/755_6050.png" width="100%"  alt=""></td></tr><tr class='even'><td>6. Перемычки контактные<br>(вид связи см. табл.&nbsp;5 п.1)</td><td align="center"><img src="./designation_of_switching_devices/755_6060.png" width="100%"  alt=""></td></tr><tr><td valign="top">7. Колодка зажимов<br><br><em>Примечание</em>. Для указания видов контактных соединений допускается применять следующие обозначения:</td><td align="center"><img src="./designation_of_switching_devices/755_6070.png" width="100%"  alt=""></td></tr><tr class='even'><td>1) колодки с разборными контактами</td><td align="center"><img src="./designation_of_switching_devices/755_6071.png" width="100%"  alt=""></td>
+    </tr><tr><td>2) колодки с разборными и неразборными контактами</td><td align="center"><img src="./designation_of_switching_devices/755_6072.png" width="100%"  alt=""></td></tr><tr class='even'><td valign="top">8. Перемычка коммутационная:<br><br>1) на размыкание</td><td align="center"><img src="./designation_of_switching_devices/755_6081.png" width="100%"  alt=""></td></tr><tr>	<td>2) с выведенным штырем</td><td align="center"><img src="./designation_of_switching_devices/755_6082.png" width="100%"  alt=""></td></tr><tr class='even'><td>3) с выведенным гнездом</td><td align="center"><img src="./designation_of_switching_devices/755_6083.png" width="100%"  alt=""></td></tr><tr><td>4) на переключение</td>	<td align="center"><img src="./designation_of_switching_devices/755_6084.png" width="100%"  alt=""></td></tr><tr class='even'><td>9. Соединение с защитным контактом</td>	<td align="center"><img src="./designation_of_switching_devices/755_6090.png" width="100%"  alt=""></td></tr></tbody></table>
+  <p>7. Обозначения элементов искателей приведены в табл. 7.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 7</caption>
+    <tbody><tr><th>Наименование</th><th width="200">Обозначение</th></tr><tr><td>1. Щетка искателя с размыканием цепи при переключении</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7010.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>2. Щетка искателя без размыкания цепи при переключении</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7020.png" width="100%"  alt=""></td>
+    </tr><tr><td>3. Контакт (выход) поля искателя</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7030.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>4. Группа контактов (выходов) поля искателя</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7040.png" width="100%"  alt=""></td>
+    </tr><tr><td>5. Поле искателя контактное</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7050.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>6. Поле искателя контактное с исходным положением<br><i>Примечание</i>. Обозначение исходного положения применяют при необходимости</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7060.png" width="100%"  alt=""></td>
+    </tr><tr><td>7. Поле искателя контактное с изображением контактов (выходов)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7070.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>8. Поле искателя с изображением групп контактов (выходов)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_7080.png" width="100%"  alt=""></td>
+    </tr></tbody></table><p>&nbsp;</p>
+    <p>8. Примеры построения обозначений искателей приведены в табл. 8.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 8</caption>
+    <tbody><tr><th>Наименование</th><th width="200">Обозначение</th></tr>
+    <tr><td>1. Искатель с одним движением без возврата щеток в исходное положение</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8010.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>2. Искатель с одним движением c возвратом щеток в исходное положение</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8020.png" width="100%"  alt=""></td>
+    </tr><tr><td><i>Примечание</i>. При использовании искателя в четырехпроводном тракте применяют обозначение искателя с возвратом щеток в исходное положение</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8021.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>3. Искатель с двумя движениями с возвратом щеток в исходное положение</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8030.png" width="100%"  alt=""></td>
+    </tr><tr><td>4. Искатель релейный</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8040.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>5. Искатель моторный с возвратом в исходное положение</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8050.png" width="100%"  alt=""></td>
+    </tr><tr><td>6. Искатель моторный с двумя движениями, приводимый в движение общим мотором</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8060.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td valign="top">7. Искатель с изображением контактов (выходов) с одним движением без возврата щеток в исходное положение:<br><br>1) с размыканием цепи при переключении</td><td align="center"><img src="./designation_of_switching_devices/755_8071.png" width="100%"  alt=""></td>
+    </tr><tr><td>2) без размыкания цепи при переключении</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8072.png" width="100%"  alt="" border="0"></td>
+    </tr><tr class='even'><td valign="top">8. Искатель с изображением контактов (выходов) с одним движением с возвратом щеток в исходное положение:<br><br>1) с размыканием цепи при переключении</td><td align="center"><img src="./designation_of_switching_devices/755_8081.png" width="100%"  alt=""></td>
+    </tr><tr><td>2) без размыкания цепи при переключении</td><td align="center"><img src="./designation_of_switching_devices/755_8082.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>9. Искатель с изображением групп контактов (выходов) (пример искателя с возвратом щеток в исходное положение)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8090.png" width="100%"  alt=""></td>
+    </tr><tr><td>10. Искатель шаговый с указанием количества шагов вынужденного и свободного искания (пример 10 шагов вынужденного и 20 шагов свободного искания)</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_8100.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td>11. Искатель с двумя движениями с возвратом в исходное положение и с указанием декад и подсоединения к определенной (шестой) декаде</td><td align="center"><img src="./designation_of_switching_devices/755_8110.png" width="100%"  alt=""></td>
+    </tr><tr><td>12. Искатель с двумя движениями, с возвратом в исходное положение и многократным соединением контактных полей несколькими искателями (например двумя)</td><td align="center"><img src="./designation_of_switching_devices/755_8121.png" width="100%"  alt=""></td>
+    </tr><tr class='even'><td><i>Примечание</i>. Если возникает необходимость указать, что искатель установлен в нужное положение с помощью маркировочного потенциала, поданного на соответствующий контакт контактного поля, следует использовать обозначение (например положения 7)</td><td align="center"><img src="./designation_of_switching_devices/755_8122.png" width="100%"  width="200" height="80" alt=""></td>
+    </tr></tbody></table>
+    <p>9. Обозначения многократных координатных соединителей приведены в табл. 9.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 9</caption>
+    <tbody><tr><th>Наименование</th><th width="90">Обозначение</th></tr>
+    <tr><td>1. Соединитель координатный многократный. Общее обозначение</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_9010.png" alt="" border="0"></td>
+    </tr><tr class='even'><td>2. Соединитель координатный многократный в четырехпроводном тракте</td>
+	    <td align="center"><img src="./designation_of_switching_devices/755_9020.png" alt=""></td>
+    </tr><tr><td>3. Вертикаль многократного координатного соединителя<br><br><i>Примечание</i>. Порядок нумерации выходов допускается изменять</td><td align="center"><img src="./designation_of_switching_devices/755_9030.png" border="0" alt=""></td></tr><tr class='even'><td>4. Вертикаль многократного координатного соединителя с m выходами</td><td align="center"><img src="./designation_of_switching_devices/755_9040.png" width="80" height="80" alt=""></td></tr><tr><td>5. Соединитель координатный многократный с n вертикалями и с m выходами в каждой вертикали</td><td align="center"><img src="./designation_of_switching_devices/755_9050.png" alt=""></td></tr><tr class='even'><td><em>Примечание</em>. Допускается упрощенное обозначение: n - число вертикалей, m - число выходов в каждой вертикали</td><td align="center"><img src="./designation_of_switching_devices/755_9051.png" alt=""></td></tr></tbody></table>
+    <p>Приложение. Справочное</p>
+   <p>10. Размеры (в модульной сетке) основных условных графических обозначений приведены в табл. 10.</p>
+  <table width="100%" cellspacing="1" cellpadding="4" class="left">
+  <caption>Таблица 10</caption>
+    <tbody><tr><th>Наименование</th><th width="140">Обозначение</th></tr><tr><td>1. Контакт коммутационного устройства<br>1) замыкающий</td><td align="center"><img src="./designation_of_switching_devices/2755_87_10_1.gif" width="99" height="99" alt="обозначение: контакт замыкающий"></td></tr><tr class='even'><td>2) размыкающий</td><td align="center"><img src="./designation_of_switching_devices/2755_87_10_2.gif" width="99" height="99" alt="обозначение:контакт размыкающий"></td></tr><tr><td>3) переключающий</td><td align="center"><img src="./designation_of_switching_devices/2755_87_10_3.gif" alt="обозначение: контакт переключающий"></td>
+    </tr><tr class='even'><td>2. Контакт импульсный замыкающий при срабатывании и возврате</td><td align="center"><img src="./designation_of_switching_devices/2755_87_10_4.gif" width="99" height="99" alt="обозначение:контакт импульсный"></td></tr><tr><td>3. Переключатель двухполюсный шестипозиционный, в котором третий контакт верхнего полюса срабатывает раньше, а пятый контакт - позже, чем соответствующие контакты нижнего полюса</td><td><img src="./designation_of_switching_devices/k5_87.gif" width="141" height="148" alt="ГОСТ 2.755-87"></td></tr></tbody></table>
+</font>
+</body>
+</html>

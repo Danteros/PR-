@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="#fff">
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/frmAboutSegmentGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:border_width="2dp"
+        android:layout_gravity="center_horizontal"
+        app:corner_radius="7dp">
+
+        <RadioButton
+            android:id="@+id/frmAboutSegment1"
+            style="@style/RadioButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:minWidth="80dp"
+            android:text="О приложении"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/frmAboutSegment2"
+            style="@style/RadioButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:minWidth="80dp"
+            android:text="Ответственность"
+            android:textSize="13sp" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <WebView
+        android:id="@+id/frmAboutWebView"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/frmAboutBuy"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/btn_selector"
+            android:text="Убрать рекламу или восстановить покупку"/>
+
+        <TextView
+            android:id="@+id/frmAboutSetComment"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/btn_selector"
+            android:text="Оставить отзыв\nв Play Market"/>
+
+    </LinearLayout>
+
+</LinearLayout>

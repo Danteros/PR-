@@ -1,0 +1,400 @@
+﻿<html>
+<head>
+<title>Расшифровка степени защиты IP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 1;
+	padding: 2;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Условные обозначения на электрических схемах</h3>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>&nbsp;Обозначение&nbsp;</td>
+<th>&nbsp;Наимен&shyован&shyие&nbsp;</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/50.png" width="80%"></td>
+<td >Постоянный ток</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/51.png" width="80%"></td>
+<td>Постоянный или переменный ток (универ&shyсаль&shyный)</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/52.png" width="80%"></td>
+<td >Переменный ток</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/49.png" width="80%"></td>
+<td>Заземление</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/34.png" width="80%"></td>
+<td >Вводной щит</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/35.png" width="80%"></td>
+<td>Распредели&shyтель&shyный щит</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/36.png" width="80%"></td>
+<td >Щит рабочего освещения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/37.png" width="80%"></td>
+<td>Щит аварийного освещения</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/1.png" width="80%"></td>
+<td >Выключа&shyтель для открытой установки IP20-IP23 однополюс&shyный</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/2.png" width="80%"></td>
+<td>Выключа&shyтель для открытой установки IP20-IP23 однополюс&shyный, сдвоенный</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/3.png" width="80%"></td>
+<td >Выключа&shyтель для открытой установки IP20-IP23 двухполюс&shyный</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/4.png" width="80%"></td>
+<td>Выключа&shyтель для скрытой установки IP20-IP23 однополюс&shyный</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/5.png" width="80%"></td>
+<td >Выключа&shyтель для открытой установки IP44-IP55 однополюс&shyный</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/6.png" width="80%"></td>
+<td>Переключа&shyтель на два направления без нулевого положения IP20-IP23 однополюс&shyный</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/7.png" width="80%"></td>
+<td >Штепсель&shyная розетка открытой установки IP20-IP23 двухполюс&shyная</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/8.png" width="80%"></td>
+<td>Штепсель&shyная розетка открытой установки IP20-IP23 двухполюс&shyная, сдвоенная</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/9.png" width="80%"></td>
+<td >Штепсель&shyная розетка открытой установки IP20-IP23 двухполюс&shyная, с защитным контактом</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/10.png" width="80%"></td>
+<td>Штепсель&shyная розетка скрытой установки IP20-IP23 двухполюс&shyная</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/11.png" width="80%"></td>
+<td >Штепсель&shyная розетка IP44-IP55 двухполюс&shyная</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/12.png" width="80%"></td>
+<td>Блок с 1 выключате&shyлем и 1 двухполюс&shyной штепсель&shyной розеткой открытой установки IP20-IP23</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/13.png" width="80%"></td>
+<td >Блок с 1 выключа&shyтелем и 1 двухполюс&shyной штепсел&shyьной розеткой скрытой установки IP20-IP23</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/14.png" width="80%"></td>
+<td>Светильник с лампой накаливания</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/15.png" width="80%"></td>
+<td >Светильник с люминесцен&shyтной лампой</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/16.png" width="80%"></td>
+<td>Светильник с разрядной лампой высокого давления</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/17.png" width="80%"></td>
+<td >Прожектор направлен&shyный с лампой накаливания</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/18.png" width="80%"></td>
+<td>Светильник с лампой накаливания для аварийного освещения</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/19.png" width="80%"></td>
+<td >Светильник с люминесцен&shyтной лампой для аварийного освещения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/20.png" width="80%"></td>
+<td>Светильник с лампой накаливания для специаль&shyного освещения, направлен&shyный для запасного выхода</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/21.png" width="80%"></td>
+<td >Светильник с лампой накаливания (общее изображение)</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/22.png" width="80%"></td>
+<td>Светильник с лампой накаливания на тросе</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/23.png" width="80%"></td>
+<td >Светильник с лампой накаливания на стене здания для наружного освещения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/24.png" width="80%"></td>
+<td>Светильник с люминесцен&shyтны&shyми лампами (общее изображение)</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/25.png" width="80%"></td>
+<td >Светильник с люминесцен&shyтными лампами установлен&shyными в линию (общее изображение)</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/26.png" width="80%"></td>
+<td>Светильник с люминесцен&shyтными лампами на кронштей&shyне для наружного освещения</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/27.png" width="80%"></td>
+<td >Светильник с разрядной лампой высокого давления на опоре для наружного освещения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/28.png" width="80%"></td>
+<td>Светильник с разрядной лампой высокого давления на кронштейне для наружного освещения</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/29.png" width="80%"></td>
+<td >Люстра</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/30.png" width="80%"></td>
+<td>Прожектор</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/31.png" width="80%"></td>
+<td >Патрон ламповый подвесной</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/32.png" width="80%"></td>
+<td>Патрон ламповый потолочный</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/33.png" width="80%"></td>
+<td >Лампа сигнальная</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/38.png" width="80%"></td>
+<td>Коробка ответви&shyтель&shyная</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/39.png" width="80%"></td>
+<td >Звонок электри&shyческий</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/40.png" width="80%"></td>
+<td>Кнопка звонка электри&shyческого</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/41.png" width="80%"></td>
+<td >Счетчик</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/42.png" width="80%"></td>
+<td>Электри&shyческая кухонная плита с 4 конфорками</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/43.png" width="80%"></td>
+<td >Электри&shyческая кухонная плита с духовкой</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/44.png" width="80%"></td>
+<td>Духовка</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/45.png" width="80%"></td>
+<td >Стиральная машина</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/46.png" width="80%"></td>
+<td>Холодиль&shyник</td>
+</tr>
+<tr>
+<td><img src="designation_on_scheme/47.png" width="80%"></td>
+<td >Распаяч&shyная коробка</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_on_scheme/48.png" width="80%"></td>
+<td>Телефон</td>
+</tr>
+</table> 
+</font>
+</body>
+</html>

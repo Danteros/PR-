@@ -1,0 +1,20 @@
+/* CSS Document */
+body {
+    color: #000;
+	background: white;
+	font-family: inherit;
+}
+#container {
+	width: auto; 
+	margin: 0;
+	padding: 0; 
+	border: 0;
+	background-image: none;
+}
+.sub-title, h3, #nav, #footer {
+   display: none;
+}
+h1  {
+   font-size: 12px;
+}
+

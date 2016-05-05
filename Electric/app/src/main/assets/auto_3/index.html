@@ -1,0 +1,283 @@
+﻿<html>
+<head>
+<title>Расшифровка степени защиты IP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:10px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Температурные датчики</h3>
+<div align=justify>
+<p>В этой статье дано краткое описание наиболее распространенных датчиков температуры.</p>
+<p>Часто потребитель, выбирающий средство измерения температуры, обращает внимание только на точность измеряемой величины, приведенную в документации на прибор или преобразователь. Между тем, необходимо понимать с какими датчиками работает данный преобразователь или контроллер.</p>
+<h4>Термометры сопротивления</h4>
+<p>Электронный прибор, предназначенный для измерения температуры. Принцип действия основан на зависимости электрического сопротивления металлов, сплавов и полупроводниковых материалов от температуры. При применении полупроводниковых материалов его обычно называют термосопротивлением, терморезистором или термистором. Самый популярный тип термометра – платиновый термометр сопротивления, это объясняется высоким температурным коэффициентом платины, ее устойчивостью к окислению и хорошей технологичностью. В качестве рабочих средств измерений применяются также медные и никелевые термометры.</p>
+<p><b>Схемы включения</b></p>
+<p>Используется 3 схемы включения датчика в измерительную цепь:</p>
+
+<p>2-проводная. В схеме подключения простейшего термометра сопротивления используется два провода. Такая схема используется там, где не требуется высокой точности, так как сопротивление проводов включается в измеренное сопротивление и приводит к появлению дополнительной погрешности. Такая схема не применяется для термометров класса А и АА.</p>
+
+<p>3-проводная обеспечивает значительно более точные измерения за счёт того, что появляется возможность измерить в отдельном опыте сопротивление подводящих проводов и учесть их влияние на точность измерения сопротивления датчика.</p>
+<p>4-проводная — наиболее точная схема, обеспечивает полное исключение влияния подводящих проводов. При этом по двум проводникам подается ток на датчик, два других, в которых ток равен нулю, используются для измерения напряжения на датчике. Недостаток — увеличение объёма используемого материала, стоимости и габаритов сборки.</p>
+<p>В промышленности наиболее распространенной является трёхпроводная схема. Для точных и эталонных измерений используется только четырёхпроводная схема.</p>
+<h5>Свойства термометров сопротивления трех наиболее распространенных типов</h5>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>&nbsp;Металл&nbsp;</td>
+<th>&nbsp;Диапа&shyзон&nbsp;</td>
+<th>&nbsp;Описание&nbsp;</td>
+<th>&nbsp;Исполь&shyзова&shyние&nbsp;</td>
+</tr>
+<tr>
+<td>Платина</td>
+<td>от-196&deg;С до 600&deg;С</td>
+<td>Высокая точность и стабиль&shyность. Характе&shyристика сопротивле&shyние-температура близка к линейной. Самый широкий диапазон температур. Высокое удельное сопроти&shyвление.</td>
+<td>Очень широко используется в промышлен&shyности всех стран, существует стандарт МЭК 60751 на платиновые термометры сопротивле&shyния и ЧЭ.</td>
+</tr>
+<tr class='even'>
+<td>Никель</td>
+<td>от-60&deg;С до 180&deg;С</td>
+<td>Наиболее высокий температу&shyрный коэффициент; наибольший выходной сигнал сопротивле&shyния. Однако, если превышена точка Кюри (352°C), может возникать непредсказ&shyуемый гистерезис характери&shyстики.</td>
+<td>Используют&shyся значительно реже, чем платиновые термометры сопротивления. Никелевые термометры сопротивления устанавли&shyвались раньше на корабельных системах контроля в комплекте с самописцами.</td>
+</tr>
+<tr>
+<td>Медь</td>
+<td>от-50&deg;С до 150&deg;С</td>
+<td>Имеют наиболее линейную характери&shyстику, но очень ограниченный диапазон температур. Очень низкое удельное сопротивле&shyние, что обуславливает необходимость использования проволоки значительной длины.</td>
+<td>Используются в электрических генераторах, на электроста&shyнциях и в некоторых других отраслях промышлен&shyности.</td>
+</tr>
+</table>
+<h4>Термисторы</h4>
+<p>Полупроводниковый прибор, электрическое сопротивление которого изменяется в зависимости от его температуры. Терморезистор был изобретён Самюэлем Рубеном (Samuel Ruben) в 1930 году. Терморезисторы изготавливаются из материалов с высоким температурным коэффициентом сопротивления (ТКС), который обычно на порядки выше, чем ТКС металлов и металлических сплавов.</p>
+<p>Два основных типа термисторов – NTC (с отрицательным температурным коэффициентом сопротивления) и PTC ( с положительным коэффициентом). Наиболее распространенный тип – NTC. РТС термисторы используются только в очень узких диапазонах температур, в несколько градусов, в основном в системах сигнализации и контроля. </p>
+<p>Для получения стабильного состояния термисторы подвергают старению (до 500-700 дней). Как правило, во время старения наблюдается рост сопротивления. При длительном использовании термисторов, они уходят за пределы допуска, в большинстве случаев, термисторный термометр показывает температуру несколько ниже, чем значение, определенное по номинальной характеристике. </p>
+<p>Термисторы представляют особый интерес для измерения низких температур благодаря своей относительной нечувствительности к магнитным полям. Некоторые типы термисторов могут применяться до температуры минус 100 °С. Диапазон наилучшей стабильности термисторов – от 0 до 100 °С. Основными преимуществами термисторов являются вибропрочность, малый размер, малая инерционность и невысокая цена.</p>
+<h4>Термопары</h4>
+<p>Старейший и до сих пор наиболее распространенный в промышленности температурный датчик. Принцип работы основан на  возникновении тока в замкнутой цепи из двух разнородных проводников при наличии градиента температур между спаями. Коэффициент пропорциональности в этой зависимости называют коэффициентом термо-ЭДС. У разных металлов коэффициент термо-ЭДС разный и, соответственно, разность потенциалов, возникающая между концами разных проводников, будет различная.</p>
+<p>Термопары применяются для измерения температуры различных типов объектов и сред, а также в автоматизированных системах управления и контроля. Термопары из вольфрам-рениевого сплава являются самыми высокотемпературными контактными датчиками температуры. Такие термопары незаменимы в металлургии для контроля температуры расплавленных металлов.</p>
+<h5>Сравнительная таблица трех основных типов контактных температурных датчиков</h5>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>&nbsp;Тип дат&shyчика&nbsp;</td>
+<th>&nbsp;Преимущества&nbsp;</td>
+<th>&nbsp;Недостатки&nbsp;</td>
+</tr>
+<tr>
+<td>Термо&shyметр сопро&shyтивле&shyния</td>
+<td><p>1.Хорошая линейность характери&shyстики</p>
+<p>2.Высокая стабильность</p>
+<p>3.Высокая взаимо&shyзаменя&shyемость в широком диапазоне температур</p>
+</td>
+<td><p>1.Низкая чувстви&shyтельность</p>
+<p>2.Относительно большая инерцион&shyность</p> 
+<p>3.Необходимость трех- или четырех-проводной схемы включения</p>
+<p>4.Чувствитель&shyность к ударам и вибрациям</p>
+<p>5.Необходим источник тока Высокая стоимость</p>
+</tr>
+<tr class='even'>
+<td>Тер&shyми&shyстор</td>
+<td><p>1.Высокая чувстви&shyтель&shyность сопротивление-температура</p>
+<p>2.Малая инерцион&shyность</p>
+<p>3.Малый размер</p>
+<p>4.Низкая стоимость</p>
+<p>5.Высокая стабиль&shyность</p>
+<p>6.Хорошая взаимо&shyзаменяе&shyмость</P>
+</td>
+<td><p>1.Нелиней&shyная характер&shyистика </p>
+<p>2.Рабочий диапазон температур примерно от -60 до +300 °С </p> 
+<p>3.Необходимость трех- или четырех-проводной схемы включения</p>
+<p>4.Взаимо&shyзаменяе&shyмость только в узком диапазоне температур </p>
+<p>5.Необходим источник тока</p>
+</tr>
+<tr>
+<td>Тер&shyмо&shyпара</td>
+<td><p>1.Широкий температур&shyный диапазон</p>
+<p>2.Простота производства </p>
+<p>3.Низкая стоимость</p>
+<p>4.Износоустойчивость</p>
+<p>5.Не требует дополнитель&shyных источников энергии</p>
+</td>
+<td><p>1.Нелинейная характери&shyстика </p>
+<p>2.Относительно низкая стабильность </p> 
+<p>3.Низкая чувствительность </p>
+<p>4.Измерение низких ЭДС может осложниться электро-магнитными шумами и наводками </p>
+<p>5.Необходима компенсация холодных спаев</p>
+</tr>
+</table>
+</font>
+</body>
+</html>

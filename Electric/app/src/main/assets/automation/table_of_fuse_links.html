@@ -1,0 +1,503 @@
+﻿<html>
+<head>
+<title>Расшифровка степени защиты IP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:10px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Таблица диаметров плавких вставок </h3>
+<div align=justify>
+<p>В том случае, если плавкая вставка перегорает, можно заменить ее "жуком", для этого, необходимо правильно подобрать диаметр проволоки. В таблице приведен расчет диаметра провода для плавких вставок.</p>
+<p>Диаметр плавкой вставки предохранителя выбирают в зависимости от тока плавления. За ток плавления, как правило, принимают значение тока в два раза превышающий номинальный ток. Например, устройство потребляет ток 1А, ток плавления принимаем 2А. И согласно нему, выбираем диаметр проволоки по таблице.</p>
+<p>Плавкая вставка не перегорает мгновенно, для этого требуется некоторое время. Кратковременные перегрузки (например, пусковые токи) не вызывают разрушения плавкой вставки.</p>
+<p>Основное отличие плавкой вставки от автоматического выключателя - это одноразовое использование плавкой вставки. В остальном смысл тот же.</p>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th rowspan="2">&nbsp;Ток плав&shyле&shyния, А&nbsp;</th>
+<th colspan="6">&nbsp;Диаметр, мм&nbsp;</th>
+</tr>
+<tr>    
+<th>Медь</th>
+<th>Алю&shyми&shyний</th>
+<th>Ни&shyке&shyлин</th>
+<th>Желе&shyзо</th>
+<th>Оло&shyво</th>
+<th>Сви&shyнец</th>
+</tr>
+<tr>
+<td>0,5</td>
+<td>0,03</td>
+<td>0,04</td>
+<td>0,05</td>
+<td>0,06</td>
+<td>0,11</td>
+<td>0,13</td>
+</tr>
+<tr class='even'>
+<td>1</td>
+<td>0,05</td>
+<td>0,07</td>
+<td>0,08</td>
+<td>0,12</td>
+<td>0,18</td>
+<td>0,21</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0,09</td>
+<td>0,1</td>
+<td>0,13</td>
+<td>0,19</td>
+<td>0,29</td>
+<td>0,33</td>
+</tr>
+<tr class='even'>
+<td>3</td>
+<td>0,11</td>
+<td>0,14</td>
+<td>0,18</td>
+<td>0,25</td>
+<td>0,38</td>
+<td>0,43</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0,14</td>
+<td>0,17</td>
+<td>0,22</td>
+<td>0,3</td>
+<td>0,46</td>
+<td>0,52</td>
+</tr>
+<tr class='even'>
+<td>5</td>
+<td>0,16</td>
+<td>0,19</td>
+<td>0,25</td>
+<td>0,35</td>
+<td>0,53</td>
+<td>0,6</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0,18</td>
+<td>0,22</td>
+<td>0,28</td>
+<td>0,4</td>
+<td>0,6</td>
+<td>0,68</td>
+</tr>
+<tr class='even'>
+<td>7</td>
+<td>0,2</td>
+<td>0,25</td>
+<td>0,32</td>
+<td>0,45</td>
+<td>0,66</td>
+<td>0,75</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0,22</td>
+<td>0,27</td>
+<td>0,34</td>
+<td>0,48</td>
+<td>0,73</td>
+<td>0,82</td>
+</tr>
+<tr class='even'>
+<td>9</td>
+<td>0,24</td>
+<td>0,29</td>
+<td>0,37</td>
+<td>0,52</td>
+<td>0,79</td>
+<td>0,89</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0,25</td>
+<td>0,31</td>
+<td>0,39</td>
+<td>0,55</td>
+<td>0,85</td>
+<td>0,95</td>
+</tr>
+<tr class='even'>
+<td>15</td>
+<td>0,32</td>
+<td>0,4</td>
+<td>0,52</td>
+<td>0,72</td>
+<td>1,12</td>
+<td>1,25</td>
+</tr>
+<tr>
+<td>20</td>
+<td>0,39</td>
+<td>0,48</td>
+<td>0,62</td>
+<td>0,87</td>
+<td>1,35</td>
+<td>1,52</td>
+</tr>
+<tr class='even'>
+<td>25</td>
+<td>0,46</td>
+<td>0,56</td>
+<td>0,73</td>
+<td>1</td>
+<td>1,56</td>
+<td>1,75</td>
+</tr>
+<tr>
+<td>30</td>
+<td>0,52</td>
+<td>0,64</td>
+<td>0,81</td>
+<td>1,15</td>
+<td>1,77</td>
+<td>1,98</td>
+</tr>
+<tr class='even'>
+<td>35</td>
+<td>0,58</td>
+<td>0,7</td>
+<td>0,91</td>
+<td>1,26</td>
+<td>1,95</td>
+<td>2,2</td>
+</tr>
+<tr>
+<td>40</td>
+<td>0,63</td>
+<td>0,77</td>
+<td>0,99</td>
+<td>1,38</td>
+<td>2,14</td>
+<td>2,44</td>
+</tr>
+<tr class='even'>
+<td>45</td>
+<td>0,68</td>
+<td>0,83</td>
+<td>1,08</td>
+<td>1,5</td>
+<td>2,3</td>
+<td>2,65</td>
+</tr>
+<tr>
+<td>50</td>
+<td>0,73</td>
+<td>0,89</td>
+<td>1,15</td>
+<td>1,6</td>
+<td>2,45</td>
+<td>2,78</td>
+</tr>
+<tr class='even'>
+<td>60</td>
+<td>0,82</td>
+<td>1</td>
+<td>1,3</td>
+<td>1,8</td>
+<td>2,8</td>
+<td>3,15</td>
+</tr>
+<tr>
+<td>70</td>
+<td>0,91</td>
+<td>1,1</td>
+<td>1,43</td>
+<td>2</td>
+<td>3,1</td>
+<td>3,5</td>
+</tr>
+<tr class='even'>
+<td>80</td>
+<td>1</td>
+<td>1,22</td>
+<td>1,57</td>
+<td>2,2</td>
+<td>3,4</td>
+<td>3,8</td>
+</tr>
+<tr>
+<td>90</td>
+<td>1,08</td>
+<td>1,32</td>
+<td>1,69</td>
+<td>2,38</td>
+<td>3,64</td>
+<td>4,1</td>
+</tr>
+<tr class='even'>
+<td>100</td>
+<td>1,15</td>
+<td>1,42</td>
+<td>1,82</td>
+<td>2,55</td>
+<td>3,9</td>
+<td>4,4</td>
+</tr>
+<tr>
+<td>120</td>
+<td>1,31</td>
+<td>1,6</td>
+<td>2,05</td>
+<td>2,85</td>
+<td>4,45</td>
+<td>5</td>
+</tr>
+<tr class='even'>
+<td>140</td>
+<td>1,45</td>
+<td>1,78</td>
+<td>2,28</td>
+<td>3,18</td>
+<td>4,92</td>
+<td>5,5</td>
+</tr>
+<tr>
+<td>160</td>
+<td>1,59</td>
+<td>1,94</td>
+<td>2,48</td>
+<td>3,46</td>
+<td>5,38</td>
+<td>6</td>
+</tr>
+<tr class='even'>
+<td>180</td>
+<td>1,72</td>
+<td>2,1</td>
+<td>2,69</td>
+<td>3,75</td>
+<td>5,82</td>
+<td>6,5</td>
+</tr>
+<tr>
+<td>200</td>
+<td>1,84</td>
+<td>2,25</td>
+<td>2,89</td>
+<td>4,05</td>
+<td>6,2</td>
+<td>7</td>
+</tr>
+<tr class='even'>
+<td>225</td>
+<td>1,99</td>
+<td>2,45</td>
+<td>3,15</td>
+<td>4,4</td>
+<td>6,75</td>
+<td>7,6</td>
+</tr>
+<tr>
+<td>250</td>
+<td>2,14</td>
+<td>2,6</td>
+<td>3,35</td>
+<td>4,7</td>
+<td>7,25</td>
+<td>8,1</td>
+</tr>
+<tr class='even'>
+<td>275</td>
+<td>2,2</td>
+<td>2,8</td>
+<td>3,55</td>
+<td>5</td>
+<td>7,7</td>
+<td>8,7</td>
+</tr>
+<tr>
+<td>300</td>
+<td>2,4</td>
+<td>2,95</td>
+<td>3,78</td>
+<td>5,3</td>
+<td>8,2</td>
+<td>9,2</td>
+</tr>
+
+</tbody></table>
+</font>
+</body>
+</html>

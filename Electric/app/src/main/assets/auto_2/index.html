@@ -1,0 +1,661 @@
+﻿<html>
+<head>
+<title>Расшифровка степени защиты IP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251" />
+<style type="text/css">
+
+/*
+This was made by JoГЈo Sardinha
+Visit me at http://johnsardine.com/
+
+The table style doesnt contain images, it contains gradients for browsers who support them as well as round corners and drop shadows.
+
+It has been tested in all major browsers.
+
+This table style is based on Simple Little Table By Orman Clark,
+you can download a PSD version of this at his website, PremiumPixels.
+http://www.premiumpixels.com/simple-little-table-psd/
+
+PLEASE CONTINUE READING AS THIS CONTAINS IMPORTANT NOTES
+
+*/
+
+/*
+Im reseting this style for optimal view using Eric Meyer's CSS Reset - http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------------------------------ */
+body, html  { height: 100%; }
+html, body, div, span, applet, object, iframe,
+/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 1;
+	padding: 2;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1.3; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table {border-spacing: 0; } /* IMPORTANT, I REMOVED border-collapse: collapse; FROM THIS LINE IN ORDER TO MAKE THE OUTER BORDER RADIUS WORK */
+
+/*------------------------------------------------------------------ */
+
+/*This is not important*/
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background.jpg);
+	margin:0 auto;
+	width:auto;
+}
+a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+a:visited {
+	color: #666;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active,
+a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+
+
+/*
+Table Style - This is what you want
+------------------------------------------------------------------ */
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:auto;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:5px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child{
+	text-align: left;
+	padding-left:2px;
+}
+table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr{
+	text-align: center;
+	padding-left:2px;
+}
+table tr td:first-child{
+	text-align: left;
+	padding-left:2px;
+	border-left: 0;
+}
+table tr td {
+	padding:5px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td{
+	border-bottom:0;
+}
+table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+</style>
+</head>
+<body>
+<font style="font-family:helvetica; font-size:11pt;"> 
+<h3><div align=center> Условные обозначения принципиальных электрических схемах</h3>
+
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>&nbsp;Обозначение&nbsp;</th>
+<th>&nbsp;Наимен&shyован&shyие&nbsp;</th>
+</tr>
+<tr>
+<td><img src="designation_scheme/5.png" width="80%"></td>
+<td >Амперметр</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/6.png" width="80%"></td>
+<td>Вольтметр</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/1.png" width="80%"></td>
+<td >Линия механичес&shyкой связи в электричес&shyких схемах</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/2.png" width="80%"></td>
+<td>Линия механичес&shyкой связи в гидравличес&shyких и пневматичес&shyких схемах</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/3.png" width="80%"></td>
+<td >Однолиней&shyная группа линий связи, скручен&shyная N проводами</td>
+</tr class='even'>
+<tr class='even'>
+<td><img src="designation_scheme/33.png" width="80%"></td>
+<td>Многоли&shyнейная группа линий связи, скручен&shyная N проводами</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/7.png" width="80%"></td>
+<td >Датчик температу&shyры</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/8.png" width="80%"></td>
+<td>Катушка электромеха&shyническо&shyго устройства</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/9.png" width="80%"></td>
+<td >Воспринима&shyющая часть электро&shyтеплово&shyго реле</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/10.png" width="80%"></td>
+<td>Катушка поляризован&shyного электроме&shyханическо&shyго устройст&shyва</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/11.png" width="80%"></td>
+<td >Катушка поляризован&shyного электроме&shyханическо&shyго устройст&shyва</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/12.png" width="80%"></td>
+<td>Обмотка максимальн&shyого тока</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/13.png" width="80%"></td>
+<td >Обмотка минимальн&shyого напряжения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/14.png" width="80%"></td>
+<td>Катушка электроме&shyханическо&shyго устройства, имеющего механичес&shyкую блокировку</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/15.png" width="80%"></td>
+<td >Катушка электромеха&shyничес&shyкого устройства, работающего с ускорением при срабатывание</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/16.png" width="80%"></td>
+<td>Катушка электромеха&shyничес&shyкого устройства, работающего с ускорением при срабатывание и отпускании</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/17.png" width="80%"></td>
+<td >Катушка электромеха&shyничес&shyкого устройства, работающего с замедлением при срабатывании </td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/18.png" width="80%"></td>
+<td>Катушка электроме&shyханичес&shyкого устройства, работающего с замедлением отпускании</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/19.png" width="80%"></td>
+<td >Катушка электроме&shyханичес&shyкого устройства, работающего с замедлением при срабатывание и отпускании</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/20.png" width="80%"></td>
+<td>Выключа&shyтель путевой однополосный</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/21.png" width="80%"></td>
+<td >Выключа&shyтель кнопочный нажимной с замыкающим контактом</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/22.png" width="80%"></td>
+<td>Выключа&shyтель кнопочный нажимной с размыкающим контактом</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/23.png" width="80%"></td>
+<td >Контакт электро&shyтеплово&shyго реле при разнесенном способе изображения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/24.png" width="80%"></td>
+<td>Выключатель трехполюсный с автомати&shyческим возвратом</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/25.png" width="80%"></td>
+<td >Контакт коммутацион&shyного устройства (замыкающий)</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/26.png" width="80%"></td>
+<td>Контакт концевого выключателя (замыкающий)</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/27.png" width="80%"></td>
+<td >Контакт коммутацион&shyного устройства (размыкающий)</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/28.png" width="80%"></td>
+<td>Контакт концевого выключателя (размыкающий)</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/29.png" width="80%"></td>
+<td >Контакт коммутацион&shyного устройства (перекидной)</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/30.png" width="80%"></td>
+<td>Выключатель ручной</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/31.png" width="80%"></td>
+<td >Контакт разборного соединения</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/32.png" width="80%"></td>
+<td>Контакт неразборного соединения</td>
+</tr>
+<tr>
+<td><img src="designation_scheme/34.png" width="80%"></td>
+<td >Разъемное соединение контакта</td>
+</tr>
+<tr class='even'>
+<td><img src="designation_scheme/35.png" width="80%"></td>
+<td>Пересечение провода без соединения (сверху), с соединением (снизу, черная точка- место соединения)</td>
+</tr>
+</table>  
+<h3><div align=center> Обозначение буквенно&shy-цифровые в электричес&shyких схемах (ГОСТ 2.710-81)</h3>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+<tr>
+<th>1б. об.</th>
+<th>&nbsp;Группы видов элемен&shyтов&nbsp;</td>
+<th>2б. об.</td>
+<th>&nbsp;Примеры видов элем&shyент&shyов&nbsp;</td>
+</tr>
+<tr>
+<td align=center>А</td>
+<td align=center>Устройство общее обозначение</td>
+<td align=center>-</td>
+<td align=center>-</td> 
+</tr>
+<tr class='even' >
+<td rowspan=7;>B</td>
+<td rowspan=7;>Преобра&shyзова&shyтели неэлектри&shyчес&shyких величин в электричес&shyкие (кроме генераторов и источников питания) или наоборот</td>
+<td>BE</td>
+<td>Сельсин&shy-приемник</td> 
+</tr>
+<tr class='even'>
+<td>BC</td>
+<td>Сельсин&shy-датчик</td> 
+</tr>
+<tr class='even'>
+<td>BK</td>
+<td>Тепловой датчик</td> 
+</tr>
+<tr class='even'>
+<td align=center>BL</td>
+<td align=center>Фото&shyэлемент</td> 
+</tr>
+<tr class='even'>
+<td align=center>BP</td>
+<td align=center>Датчик давления</td> 
+</tr>
+<tr class='even'>
+<td align=center>BR</td>
+<td align=center>Тахо&shyгенератор</td> 
+</tr>
+<tr class='even'>
+<td align=center>BV</td>
+<td align=center>Датчик скорости</td> 
+</tr>
+<tr>
+<td align=center>C</td>
+<td align=center>Конденса&shyторы</td>
+<td align=center>-</td>
+<td align=center>-</td> 
+</tr>
+<tr class='even'>
+<td rowspan=4; align=center>D</td>
+<td rowspan=4; align=center>Схемы интеграль&shyные, микро&shyсборки</td>
+<td align=center>DA</td>
+<td align=center>Схема интеграль&shyная, аналоговая</td> 
+</tr>
+<tr class='even'>
+<td align=center>DD</td>
+<td align=center>Схема интегральная, цифровая, логический элемент</td> 
+</tr>
+<tr class='even'>
+<td align=center>DT</td>
+<td align=center>Устройство задержки</td> 
+</tr>
+<tr class='even'>
+<td align=center>DS</td>
+<td align=center>Устройство хранения информа&shyции</td> 
+</tr>
+<tr>
+<td rowspan=2; align=center>E</td>
+<td rowspan=2; align=center>Элементы разные</td>
+<td align=center>EK</td>
+<td align=center>Нагрева&shyтельный элемент</td> 
+</tr>
+<tr>
+<td align=center>EL</td>
+<td align=center>Лампа осветитель&shyная</td> 
+</tr>
+<tr class='even'>
+<td rowspan=4; align=center>F</td>
+<td rowspan=4; align=center>Разря&shyдники, предохра&shyните&shyли, устройства защиты</td>
+<td align=center>FA</td>
+<td align=center>Дискретный элемент защиты по току мгновен&shyного действия</td> 
+</tr>
+<tr class='even'>
+<td align=center>FP</td>
+<td align=center>Дискретный элемент защиты по току инерцион&shyного действия</td> 
+</tr>
+<tr class='even'>
+<td align=center>FV</td>
+<td align=center>Дискретный элемент защиты по напряжению</td> 
+</tr>
+<tr class='even'>
+<td align=center>FU</td>
+<td align=center>Предохра&shyнитель</td> 
+</tr>
+<tr>
+<td align=center>G</td>
+<td align=center>Генера&shyторы, источники питания</td>
+<td align=center>GB</td>
+<td align=center>Батарея</td> 
+</tr>
+<tr class='even'>
+<td rowspan=3; align=center>H</td>
+<td rowspan=3; align=center>Элементы индика&shyтор&shyные и сигналь&shyные</td>
+<td align=center>HA</td>
+<td align=center>Прибор звуковой сигнали&shyзации</td> 
+</tr>
+<tr class='even'>
+<td align=center>HG</td>
+<td align=center>Индикатор символьный</td> 
+</tr>
+<tr class='even'>
+<td align=center>HL</td>
+<td align=center>Прибор световой сигнализа&shyции</td> 
+</tr>
+<tr>
+<td rowspan=7; align=center>K</td>
+<td rowspan=7; align=center>Реле, конта&shyкторы, пускатели</td>
+<td align=center>KH</td>
+<td align=center>Реле указательное</td> 
+</tr>
+<tr>
+<td align=center>KA</td>
+<td align=center>Реле токовое</td> 
+</tr>
+<tr>
+<td align=center>KK</td>
+<td align=center>Реле электро&shyтепловое</td> 
+</tr>
+<tr>
+<td align=center>KM</td>
+<td align=center>Магнитный пускатель, контактор</td> 
+</tr>
+<tr>
+<td align=center>KP</td>
+<td align=center>Реле поляризован&shyное</td> 
+</tr>
+<tr>
+<td align=center>KT</td>
+<td align=center>Реле времени</td> 
+</tr>
+<tr>
+<td align=center>KV</td>
+<td align=center>Реле напряжения</td> 
+</tr>
+<tr class='even'>
+<td align=center>L</td>
+<td align=center>Катушки индуктивно&shyсти, дроссели</td>
+<td align=center>LL</td>
+<td align=center>Дроссель люминесцен&shyтного освещения</td> 
+</tr>
+<tr>
+<td align=center>M</td>
+<td align=center>Двига&shyтели</td>
+<td align=center>-</td>
+<td align=center>-</td> 
+</tr>
+<tr class='even'>
+<td rowspan=10; align=center>P</td>
+<td rowspan=10; align=center>Приборы, измери&shyтель&shyное оборудо&shyвание</td>
+<td align=center>PA</td>
+<td align=center>Амперметр</td> 
+</tr>
+<tr class='even'>
+<td align=center>PC</td>
+<td align=center>Счетчик пульса</td> 
+</tr>
+<tr class='even'>
+<td align=center>PF</td>
+<td align=center>Частото&shyметр</td> 
+</tr>
+<tr class='even'>
+<td align=center>PK</td>
+<td align=center>Счетчик реактивной энергии</td> 
+</tr>
+<tr class='even'>
+<td align=center>PI</td>
+<td align=center>Счетчик активной энергии</td> 
+</tr>
+<tr class='even'>
+<td align=center>PR</td>
+<td align=center>Омметр</td> 
+</tr>
+<tr class='even'>
+<td align=center>PS</td>
+<td align=center>Регистриру&shyющий прибор</td> 
+</tr>
+<tr class='even'>
+<td align=center>PT</td>
+<td align=center>Измеритель времени, часы</td> 
+</tr>
+<tr class='even'>
+<td align=center>PV</td>
+<td align=center>Вольтметр</td> 
+</tr>
+<tr class='even'>
+<td align=center>PW</td>
+<td align=center>Ваттметр</td> 
+</tr>
+<tr>
+<td rowspan=2; align=center>Q</td>
+<td rowspan=2; align=center>Выключа&shyтели и разъе&shyдини&shyтели в силовых цепях</td>
+<td align=center>QF</td>
+<td align=center>Автомат&shyический выключатель</td> 
+</tr>
+<tr>
+<td align=center>QS</td>
+<td align=center>Разъедини&shyтель</td> 
+</tr>
+<tr class='even'>
+<td rowspan=4; align=center>R</td>
+<td rowspan=4; align=center>Резисторы</td>
+<td align=center>RK</td>
+<td align=center>Термистор</td> 
+</tr>
+<tr class='even'>
+<td align=center>RP</td>
+<td align=center>Потенцио&shyметр</td> 
+</tr>
+<tr class='even'>
+<td align=center>RS</td>
+<td align=center>Шунт измеритель&shyный</td> 
+</tr>
+<tr class='even'>
+<td align=center>RU</td>
+<td align=center>Варистор</td> 
+</tr>
+<tr>
+<td rowspan=8; align=center>S</td>
+<td rowspan=8; align=center>Устройства коммута&shyцион&shyные в цепях управления, сигна&shyлиза&shyции</td>
+<td align=center>SA</td>
+<td align=center>Выключа&shyтель или переключа&shyтель</td> 
+</tr>
+<tr>
+<td align=center>SB</td>
+<td align=center>Выключатель кнопочный</td> 
+</tr>
+<tr>
+<td align=center>SF</td>
+<td align=center>Выключатель автомати&shyческий</td> 
+</tr>
+<tr>
+<td align=center>SL</td>
+<td align=center>Выключатель срабатыва&shyющий по уровню</td> 
+</tr>
+<tr>
+<td align=center>SP</td>
+<td align=center>Выключатель срабатыва&shyющий от давления</td> 
+</tr>
+<tr>
+<td align=center>SQ</td>
+<td align=center>Выключатель срабатыва&shyющий от положения</td> 
+</tr>
+<tr>
+<td align=center>SR</td>
+<td align=center>Выключатель срабатыва&shyющий от частоты вращения</td> 
+</tr>
+<tr>
+<td align=center>SK</td>
+<td align=center>Выключатель срабатывающий от температуры</td> 
+</tr>
+<tr class='even'>
+<td rowspan=3; align=center>T</td>
+<td rowspan=3; align=center>Трансфо&shyрма&shyторы, авто&shyтрансформа&shyторы</td>
+<td align=center>TA</td>
+<td align=center>Трансформа&shyтор тока</td> 
+</tr>
+<tr class='even'>
+<td align=center>TV</td>
+<td align=center>Трансформа&shyтор напряжения</td> 
+</tr>
+<tr class='even'>
+<td align=center>TS</td>
+<td align=center>Стабилиза&shyтор</td> 
+</tr>
+<tr>
+<td align=center>U</td>
+<td align=center>Преобразова&shyтели, электри&shyческих величин в электри&shyческие</td>
+<td align=center>UZ</td>
+<td align=center>Преобразова&shyтель частоты, инвертор, выпрямитель</td> 
+</tr>
+<tr class='even'>
+<td rowspan=4; align=center>V</td>
+<td rowspan=4; align=center>Приборы электроваку&shyумные и полупро&shyводников&shyые</td>
+<td align=center>VD</td>
+<td align=center>Диод, стабилитрон</td> 
+</tr>
+<tr class='even'>
+<td align=center>VL</td>
+<td align=center>Приборы электроваку&shyумные</td> 
+</tr>
+<tr class='even'>
+<td align=center>VT</td>
+<td align=center>Транзистор</td> 
+</tr>
+<tr class='even'>
+<td align=center>VS</td>
+<td align=center>Тиристор</td> 
+</tr>
+<tr>
+<td rowspan=4; align=center>X</td>
+<td rowspan=4; align=center>Соединения контактов</td>
+<td align=center>XA</td>
+<td align=center>Токосъемник</td> 
+</tr>
+<tr>
+<td align=center>XP</td>
+<td align=center>Штырь</td> 
+</tr>
+<tr>
+<td align=center>XS</td>
+<td align=center>Гнездо</td> 
+</tr>
+<tr>
+<td align=center>XT</td>
+<td align=center>Соединения разборные</td> 
+</tr>
+<tr class='even'>
+<td rowspan=3; align=center>Y</td>
+<td rowspan=3; align=center>Устройства механи&shyческие с электрома&shyгнитным приводом</td>
+<td align=center>YA</td>
+<td align=center>Электро&shyмагнит</td> 
+</tr>
+<tr class='even'>
+<td align=center>YB</td>
+<td align=center>Тормоз с электро&shyмагнитным приводом</td> 
+</tr>
+<tr class='even'>
+<td align=center>YH</td>
+<td align=center>Электро&shyмагнитная плита</td> 
+</tr>
+</font>
+</body>
+</html>

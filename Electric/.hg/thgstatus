@@ -1,0 +1,10 @@
+m.gradle/2.8/taskArtifacts
+m.idea
+r.idea/libraries
+mapp
+mapp/build/generated/source/r/debug/android/support/v7/appcompat
+mapp/build/generated/source/r/debug/com/electric/handbook
+mapp/build/intermediates/incremental/mergeResourcesdebug
+mapp/build/intermediates/res
+mapp/build/intermediates/symbols/debug
+mapp/src/main/res/layout

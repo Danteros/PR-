@@ -1,0 +1,5 @@
+<resources>
+    <string name="server_name">http://autonomnoe.ru</string>
+    <string name="request_news">/newsjson.js</string>
+<string name="request_online_engineer">http://autonomnoe.ru/s/send-email</string>
+</resources>

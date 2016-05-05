@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_text_description"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/calc_pdd_description"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/divider_margin"
+                android:paddingLeft="@dimen/divider_margin"
+                android:paddingRight="@dimen/divider_margin"
+                android:paddingStart="@dimen/divider_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/divider_margin"
+                    android:paddingTop="@dimen/divider_margin"
+                    android:text="@string/title_amperage_power"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <com.electric.handbook.mview.MSwitch
+                    android:id="@+id/mSwitchAK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:textOne="А"
+                    app:textTwo="кВт" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/divider_margin"
+                android:layout_marginStart="@dimen/divider_margin"
+                android:background="@color/divider_calc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/divider_margin"
+                android:paddingLeft="@dimen/divider_margin"
+                android:paddingRight="@dimen/divider_margin"
+                android:paddingStart="@dimen/divider_margin">
+
+                <TextView
+                    android:id="@+id/tvPowerInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/divider_margin"
+                    android:paddingTop="@dimen/divider_margin"
+                    android:text="@string/title_amperage"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvPowerEnter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title_enter"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/enter_text" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/divider_margin"
+                android:layout_marginStart="@dimen/divider_margin"
+                android:background="@color/divider_calc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/divider_margin"
+                android:paddingLeft="@dimen/divider_margin"
+                android:paddingRight="@dimen/divider_margin"
+                android:paddingStart="@dimen/divider_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/divider_margin"
+                    android:paddingTop="@dimen/divider_margin"
+                    android:text="@string/title_conductor_length"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvLengthEnter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title_enter"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/enter_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/divider_margin"
+                android:layout_marginStart="@dimen/divider_margin"
+                android:background="@color/divider_calc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/divider_margin"
+                android:paddingLeft="@dimen/divider_margin"
+                android:paddingRight="@dimen/divider_margin"
+                android:paddingStart="@dimen/divider_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/divider_margin"
+                    android:paddingTop="@dimen/divider_margin"
+                    android:text="@string/title_pdd_result"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_empty_result"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/enter_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/divider_margin"
+                android:layout_marginStart="@dimen/divider_margin"
+                android:background="@color/divider_calc" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

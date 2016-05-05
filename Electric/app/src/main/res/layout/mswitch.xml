@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/back_mswitch"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/mSwitcherOne"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_mswitch"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="45dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ON" />
+
+        <TextView
+            android:id="@+id/mSwitcherTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_mswitch"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="45dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="OFF" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

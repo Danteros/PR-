@@ -1,0 +1,5 @@
+/* CSS Document */
+.dotted { display:block; width:auto; height:1px; background-image:url(dotted.gif); background-repeat:repeat-x; margin-bottom:1em; }
+.left td { border:1px solid #ccc; }
+.center td { text-align:center; border:1px solid #ccc; }
+.formula { font-size:medium; text-align:center; font
